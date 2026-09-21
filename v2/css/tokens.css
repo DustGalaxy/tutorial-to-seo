@@ -1,0 +1,14 @@
+/* Design Tokens & CSS Custom Properties */
+:root {
+            color-scheme: light;
+            --ink: #193450;
+            --blue: #173a92;
+            --yellow: #ffe88e;
+            --paper: #fffdf0;
+            --ui: #d5d4ca;
+            --purple: #69459c;
+            --green: #317d37;
+            font-family: Tahoma, Verdana, sans-serif;
+            font-size: 16px;
+            color: var(--ink)
+        }

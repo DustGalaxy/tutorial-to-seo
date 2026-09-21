@@ -1,0 +1,2305 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="theme-color" content="#286a80">
+    <title>Сходинки в SEO — Максимус и тайны поиска</title>
+    <meta name="description"
+        content="Браузерная обучающsая игра о SEO: карта приключений, Максимус, практические задания и законченные кейсы.">
+        <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+
+<body>
+    <div class="computer">
+        <header class="titlebar"><span class="appmark"
+                aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>Максимус.exe — школа маленьких
+                SEO-приключений</span><span class="windowword">[ учебная программа ]</span></header>
+        <nav class="menubar" aria-label="Меню игры"><button class="winbtn" id="mapbtn">⌂ Карта</button><button
+                class="winbtn" id="bookbtn">▤ Словарик</button><button class="winbtn" id="soundbtn"
+                aria-pressed="false">♪ Звук: выкл.</button><button class="winbtn" id="helpbtn">? Справка</button><span
+                class="version">SEO SCHOOL · v1.4</span></nav>
+        <div class="brandline">
+            <div>
+                <h1 class="gametitle">Сходинки в SEO</h1>
+                <div class="subtitle">Максимус и тайны поиска</div>
+            </div>
+            <div class="scorebox">
+                <div class="scoretext"><span>Пройдено: <strong id="count">0 / 17</strong></span><strong id="stars">★
+                        0</strong></div>
+                <div class="meter" role="progressbar" aria-label="Прогресс игры" aria-valuemin="0" aria-valuemax="17"
+                    aria-valuenow="0">
+                    <div class="meterfill" id="progress"></div>
+                </div>
+            </div>
+        </div>
+
+        <aside id="launch-notice" class="launch-notice" role="status"><strong>Максимус: задания здесь!</strong>
+            <p>Если игра не запустилась, доступен режим чтения. Нажми на точку карты: внутри — вопросы, подсказки и
+                ответы для самопроверки.</p>
+            <p>Звёзды и сохранение прогресса работают в игровом режиме. Для него нужен браузер, в котором разрешён
+                запуск JavaScript.</p>
+        </aside>
+        <div class="gamebody">
+            <section class="mapframe" aria-label="Карта приключения">
+                <div class="maptoolbar"><span>Нажми на точку, чтобы открыть задание</span><button class="winbtn"
+                        id="centerbtn">К моему заданию</button></div>
+                <div class="mapviewport" id="mapviewport">
+                    <div class="world" id="world" style="--reading-height:127.5rem;--reading-heading:91.25rem"><svg
+                            class="roads" viewBox="0 0 1000 667" preserveAspectRatio="none" aria-hidden="true">
+                            <g id="roadpaths">
+                                <path class="roadbed" vector-effect="non-scaling-stroke"
+                                    d="M 160,133.33333333333334 L 370,133.33333333333334 L 590,133.33333333333334 L 810,133.33333333333334 L 810,253.33333333333334 L 590,253.33333333333334 L 370,253.33333333333334 L 160,373.3333333333333 L 370,373.3333333333333 L 590,373.3333333333333 L 810,373.3333333333333" />
+                                <path class="road" vector-effect="non-scaling-stroke"
+                                    d="M 160,133.33333333333334 L 370,133.33333333333334 L 590,133.33333333333334 L 810,133.33333333333334 L 810,253.33333333333334 L 590,253.33333333333334 L 370,253.33333333333334 L 160,373.3333333333333 L 370,373.3333333333333 L 590,373.3333333333333 L 810,373.3333333333333" />
+                                <path class="roadline" vector-effect="non-scaling-stroke"
+                                    d="M 160,133.33333333333334 L 370,133.33333333333334 L 590,133.33333333333334 L 810,133.33333333333334 L 810,253.33333333333334 L 590,253.33333333333334 L 370,253.33333333333334 L 160,373.3333333333333 L 370,373.3333333333333 L 590,373.3333333333333 L 810,373.3333333333333" />
+                                <path class="roadbed" vector-effect="non-scaling-stroke"
+                                    d="M 810,373.3333333333333 L 800,480 L 590,480 L 360,480" />
+                                <path class="road" vector-effect="non-scaling-stroke"
+                                    d="M 810,373.3333333333333 L 800,480 L 590,480 L 360,480" />
+                                <path class="roadline" vector-effect="non-scaling-stroke"
+                                    d="M 810,373.3333333333333 L 800,480 L 590,480 L 360,480" />
+                                <path class="roadbed" vector-effect="non-scaling-stroke"
+                                    d="M 810,373.3333333333333 Q 945,382 945,440 L 945,566.667 Q 945,593.333 810,593.3333333333334 L 590,593.3333333333334 L 360,593.3333333333334" />
+                                <path class="road" vector-effect="non-scaling-stroke"
+                                    d="M 810,373.3333333333333 Q 945,382 945,440 L 945,566.667 Q 945,593.333 810,593.3333333333334 L 590,593.3333333333334 L 360,593.3333333333334" />
+                                <path class="roadline" vector-effect="non-scaling-stroke"
+                                    d="M 810,373.3333333333333 Q 945,382 945,440 L 945,566.667 Q 945,593.333 810,593.3333333333334 L 590,593.3333333333334 L 360,593.3333333333334" />
+                            </g>
+                        </svg><svg class="preview-roads" viewBox="0 0 1000 2040" preserveAspectRatio="none"
+                            aria-hidden="true">
+                            <path class="roadbed" vector-effect="non-scaling-stroke"
+                                d="M 260,110 C 260,170 740,170 740,230 C 740,290 260,290 260,350 C 260,410 740,410 740,470 C 740,530 260,530 260,590 C 260,650 740,650 740,710 C 740,770 260,770 260,830 C 260,890 740,890 740,950 C 740,1010 260,1010 260,1070 C 260,1130 740,1130 740,1190 C 740,1250 260,1250 260,1310 C 260,1357.5 500,1357.5 500,1405" />
+                            <path class="road" vector-effect="non-scaling-stroke"
+                                d="M 260,110 C 260,170 740,170 740,230 C 740,290 260,290 260,350 C 260,410 740,410 740,470 C 740,530 260,530 260,590 C 260,650 740,650 740,710 C 740,770 260,770 260,830 C 260,890 740,890 740,950 C 740,1010 260,1010 260,1070 C 260,1130 740,1130 740,1190 C 740,1250 260,1250 260,1310 C 260,1357.5 500,1357.5 500,1405" />
+                            <path class="roadline" vector-effect="non-scaling-stroke"
+                                d="M 260,110 C 260,170 740,170 740,230 C 740,290 260,290 260,350 C 260,410 740,410 740,470 C 740,530 260,530 260,590 C 260,650 740,650 740,710 C 740,770 260,770 260,830 C 260,890 740,890 740,950 C 740,1010 260,1010 260,1070 C 260,1130 740,1130 740,1190 C 740,1250 260,1250 260,1310 C 260,1357.5 500,1357.5 500,1405" />
+                            <path class="roadbed" vector-effect="non-scaling-stroke"
+                                d="M 500,1405 C 500,1482.5 260,1482.5 260,1560 C 260,1645 260,1645 260,1730 C 260,1815 260,1815 260,1900" />
+                            <path class="road" vector-effect="non-scaling-stroke"
+                                d="M 500,1405 C 500,1482.5 260,1482.5 260,1560 C 260,1645 260,1645 260,1730 C 260,1815 260,1815 260,1900" />
+                            <path class="roadline" vector-effect="non-scaling-stroke"
+                                d="M 500,1405 C 500,1482.5 260,1482.5 260,1560 C 260,1645 260,1645 260,1730 C 260,1815 260,1815 260,1900" />
+                            <path class="roadbed" vector-effect="non-scaling-stroke"
+                                d="M 500,1405 C 500,1482.5 740,1482.5 740,1560 C 740,1645 740,1645 740,1730 C 740,1815 740,1815 740,1900" />
+                            <path class="road" vector-effect="non-scaling-stroke"
+                                d="M 500,1405 C 500,1482.5 740,1482.5 740,1560 C 740,1645 740,1645 740,1730 C 740,1815 740,1815 740,1900" />
+                            <path class="roadline" vector-effect="non-scaling-stroke"
+                                d="M 500,1405 C 500,1482.5 740,1482.5 740,1560 C 740,1645 740,1645 740,1730 C 740,1815 740,1815 740,1900" />
+                        </svg><span class="region basic">Долина первых открытий</span><span
+                            class="region classic">Классические проекты</span><span class="region igaming">Остров
+                            iGaming</span>
+                        <div id="nodes"><a class="mapnode current" style="--x:16;--y:20;--mx:26%;--my:6.875rem"
+                                href="#reading-m1" aria-label="1. Первый день в школе поиска"><span
+                                    class="num">1</span><span class="nodelabel">Знакомство</span></a><a class="mapnode"
+                                style="--x:37;--y:20;--mx:74%;--my:14.375rem" href="#reading-m2"
+                                aria-label="2. Чего хочет искатель?"><span class="num">2</span><span
+                                    class="nodelabel">Интенты</span></a><a class="mapnode"
+                                style="--x:59;--y:20;--mx:26%;--my:21.875rem" href="#reading-m3"
+                                aria-label="3. Пульт Google Search Console"><span class="num">3</span><span
+                                    class="nodelabel">GSC</span></a><a class="mapnode"
+                                style="--x:81;--y:20;--mx:74%;--my:29.375rem" href="#reading-m4"
+                                aria-label="4. CTR: от процента к решению"><span class="num">4</span><span
+                                    class="nodelabel">Клики и CTR</span></a><a class="mapnode"
+                                style="--x:81;--y:38;--mx:26%;--my:36.875rem" href="#reading-m5"
+                                aria-label="5. Ссылочная лаборатория Ahrefs"><span class="num">5</span><span
+                                    class="nodelabel">Ahrefs</span></a><a class="mapnode"
+                                style="--x:59;--y:38;--mx:74%;--my:44.375rem" href="#reading-m6"
+                                aria-label="6. Мастерская семантики"><span class="num">6</span><span
+                                    class="nodelabel">Семантика</span></a><a class="mapnode"
+                                style="--x:37;--y:38;--mx:26%;--my:51.875rem" href="#reading-m7"
+                                aria-label="7. Что происходит после клика?"><span class="num">7</span><span
+                                    class="nodelabel">GA4</span></a><a class="mapnode"
+                                style="--x:16;--y:56;--mx:74%;--my:59.375rem" href="#reading-m9"
+                                aria-label="8. Вывеска для страницы"><span class="num">8</span><span
+                                    class="nodelabel">Title</span></a><a class="mapnode"
+                                style="--x:37;--y:56;--mx:26%;--my:66.875rem" href="#reading-m10"
+                                aria-label="9. Две двери: обход и индекс"><span class="num">9</span><span
+                                    class="nodelabel">Индексация</span></a><a class="mapnode"
+                                style="--x:59;--y:56;--mx:74%;--my:74.375rem" href="#reading-m11"
+                                aria-label="10. Найти главный экземпляр"><span class="num">10</span><span
+                                    class="nodelabel">Canonical</span></a><a class="mapnode"
+                                style="--x:81;--y:56;--mx:26%;--my:81.875rem" href="#reading-m12"
+                                aria-label="11. Дело о пропавших кликах"><span class="num">11</span><span
+                                    class="nodelabel">Большое дело</span></a><a class="mapnode"
+                                style="--x:80;--y:72;--mx:26%;--my:97.5rem" href="#reading-c1"
+                                aria-label="К1. Магазин: две страницы, один запрос"><span class="num">К1</span><span
+                                    class="nodelabel">Две страницы</span></a><a class="mapnode"
+                                style="--x:59;--y:72;--mx:26%;--my:108.125rem" href="#reading-c2"
+                                aria-label="К2. Магазин переезжает на новые адреса"><span class="num">К2</span><span
+                                    class="nodelabel">Переезд URL</span></a><a class="mapnode"
+                                style="--x:36;--y:72;--mx:26%;--my:118.75rem" href="#reading-c3"
+                                aria-label="К3. Спрос или потеря видимости?"><span class="num">К3</span><span
+                                    class="nodelabel">Финал: спрос</span></a><a class="mapnode"
+                                style="--x:81;--y:89;--mx:74%;--my:97.5rem" href="#reading-i1"
+                                aria-label="И1. iGaming: у бренда много задач"><span class="num">И1</span><span
+                                    class="nodelabel">Задачи бренда</span></a><a class="mapnode"
+                                style="--x:59;--y:89;--mx:74%;--my:108.125rem" href="#reading-i2"
+                                aria-label="И2. iGaming: предложение устарело"><span class="num">И2</span><span
+                                    class="nodelabel">Свежие условия</span></a><a class="mapnode"
+                                style="--x:36;--y:89;--mx:74%;--my:118.75rem" href="#reading-i3"
+                                aria-label="И3. iGaming: 24 страницы без различий"><span class="num">И3</span><span
+                                    class="nodelabel">Финал: аудит</span></a></div>
+                    </div>
+                </div>
+            </section>
+            <aside class="guidepanel">
+                <div class="guidewindow">
+                    <div class="minihead">Твой помощник — Максимус</div>
+                    <div class="mascotstage"><img
+                            src="assets/images/maximus.png"
+                            alt="Максимус — улыбающийся системный блок с руками в белых перчатках"></div>
+                    <div class="speech">
+                        <div id="guidecopy">
+                            <p><strong>Максимус. Будем знакомы.</strong></p>
+                            <p>Токсично-прямолинейный, но по-доброму. Нажми на точку карты. Вопросы сами себя не
+                                прочитают.</p>
+                        </div><button class="playbutton" id="continuebtn">В путь!</button>
+                    </div>
+                </div>
+                <div class="notebook">
+                    <h3>Памятка путешественника</h3>
+                    <div class="legend"><span class="legdot"></span>Можно проходить</div>
+                    <div class="legend"><span class="legdot done"></span>Уже пройдено</div>
+                    <div class="legend"><span class="legdot lock"></span>Откроется позже</div>
+                    <p style="margin:12px 0 0">Ошибаться можно. Максимус объяснит ответ, а ты попробуешь снова.</p>
+                </div>
+            </aside>
+        </div>
+        <footer class="statusbar"><span id="savestatus" role="status">Режим чтения · без начисления звёзд и сохранения
+                прогресса</span><span>17 остановок · 2 специализации · обе ветки доступны</span></footer>
+    </div>
+    <dialog id="mission" aria-labelledby="missionwindowtitle">
+        <div class="dialoghead"><span id="missionwindowtitle">Задание Максимуса</span><button class="closebtn"
+                data-close="mission" aria-label="Вернуться к карте">×</button></div>
+        <div class="dialogcontent" id="missioncontent"></div>
+        <div class="missiondock" id="missiondock"></div>
+    </dialog>
+    <dialog id="book" class="small" aria-labelledby="booktitle">
+        <div class="dialoghead"><span id="booktitle">Словарик Максимуса</span><button class="closebtn" data-close="book"
+                aria-label="Закрыть словарик">×</button></div>
+        <div class="dialogcontent sheet" id="bookcontent"></div>
+    </dialog>
+    <dialog id="help" class="small" aria-labelledby="helptitle">
+        <div class="dialoghead"><span id="helptitle">Справка — как устроено приключение</span><button class="closebtn"
+                data-close="help" aria-label="Закрыть справку">×</button></div>
+        <div class="dialogcontent sheet credits" id="helpcontent"></div>
+    </dialog>
+    <dialog id="reset" class="small" aria-labelledby="resettitle">
+        <div class="dialoghead"><span id="resettitle">Начать приключение заново?</span><button class="closebtn"
+                data-close="reset" aria-label="Отменить">×</button></div>
+        <div class="dialogcontent">
+            <p class="resetwarn">Удалятся пройденные задания и звёзды в этом браузере. HTML-файл останется на месте.</p>
+            <div class="actions"><button class="winbtn" data-close="reset">Оставить прогресс</button><button
+                    class="primary" id="confirmreset">Начать заново</button></div>
+        </div>
+    </dialog>
+    <div class="toast" id="toast" hidden role="status"></div>
+    <!-- READING START -->
+    <section class="reading-mission" id="reading-m1" tabindex="-1" aria-labelledby="reading-title-m1">
+        <div class="dialoghead"><span>Остановка 1 · Режим чтения</span><a class="winbtn" href="#world">К карте ↗</a>
+        </div>
+        <div class="reading-body">
+            <h2 id="reading-title-m1">Первый день в школе поиска</h2>
+            <p class="curator"><b>Максимус</b>Максимус. Системный блок, куратор, энтузиазм не установлен. Ладно, начнём
+                с того, как страницы попадают в поиск.</p>
+            <article class="reading-step">
+                <p class="missiontag">Этап 1 из 2</p>
+                <h3>Что мы будем изучать?</h3>
+                <div class="story">
+                    <p>В городке открылся магазин настольных игр. Его сайт уже работает, но владельцу хочется, чтобы
+                        люди находили нужные товары через поиск. Он приглашает тебя помочь.</p>
+                </div>
+                <p class="questiontitle">Какая задача относится к SEO?</p>
+                <ol class="reading-options" type="A">
+                    <li>Сделать страницы понятнее поиску и полезнее людям, которые ищут товары</li>
+                    <li>Настроить только платные объявления над результатами поиска</li>
+                    <li>Установить покупателям новый браузер</li>
+                    <li>Увеличить яркость фотографий на экране посетителя</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p class="maximus-grumble">В смысле, уже подсказка? Мы ещё даже системный блок не успели прогреть.
+                    </p>
+                    <details>
+                        <summary>Ладно, подскажи</summary>
+                        <p>Подумай о результатах поиска, за переходы из которых не платят рекламной системе.</p>
+                    </details>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Сделать страницы понятнее поиску и полезнее людям, которые ищут товары
+                    </div>
+                    <p>SEO помогает улучшать присутствие сайта в органическом поиске. Платная реклама — отдельный канал.
+                        Само SEO не даёт гарантии первой позиции.</p>
+                </details>
+            </article>
+            <article class="reading-step">
+                <p class="missiontag">Этап 2 из 2</p>
+                <h3>Как поисковик узнает о странице?</h3>
+                <div class="story">
+                    <p>Ты добавил страницу новой игры. Её ещё нет в результатах поиска. Максимус предлагает вспомнить
+                        три этапа: обнаружение страницы, обход и включение в индекс. Показ по конкретному запросу —
+                        следующий отдельный вопрос.</p>
+                </div>
+                <p class="questiontitle">Что верно?</p>
+                <ol class="reading-options" type="A">
+                    <li>Каждая новая страница сразу появляется в топ-10</li>
+                    <li>Поисковик должен обнаружить и обработать страницу; индексация и высокие позиции не гарантированы
+                    </li>
+                    <li>Для индексации обязательно купить рекламу</li>
+                    <li>Любой открытый URL уже находится в индексе</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>Доступность страницы в браузере и наличие в поиске — не одно и то же.</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Поисковик должен обнаружить и обработать страницу; индексация и высокие
+                        позиции не гарантированы</div>
+                    <p>Публикация делает страницу доступной, но поиск ещё должен её обработать. Полезные внутренние
+                        ссылки помогают обнаружению. Даже проиндексированная страница может не получать показов.</p>
+                </details>
+            </article>
+            <details class="reading-outcome">
+                <summary>Итог всей остановки</summary>
+                <h3>Как сайт становится участником поиска</h3>
+                <h4>Три этапа</h4>
+                <p>Сначала поисковик обнаруживает адрес, например по ссылке. При обходе запрашивает и обрабатывает
+                    содержимое. Затем решает, включать ли страницу в индекс. Публикация сайта и код 200 ещё не означают,
+                    что все эти этапы уже пройдены.</p>
+                <h4>Зачем нужно SEO</h4>
+                <p>Работа SEO помогает людям находить подходящие страницы, а поисковым системам — понимать их
+                    назначение. Для магазина полезны точный ассортимент, понятная структура и ответы на вопросы
+                    покупателей. Покупка рекламы — другой канал привлечения, со своими инструментами.</p>
+                <h4>Индекс не равен первому месту</h4>
+                <p>Индексируемая страница лишь может участвовать в поиске. Для конкретного запроса важны соответствие
+                    задаче, качество и другие условия. Нельзя гарантировать позицию только фактом публикации, добавления
+                    в sitemap или выполнения списка настроек.</p>
+                <h4>С чего начинать работу</h4>
+                <p>Проверь, какую задачу решает страница, доступна ли она людям и поиску, можно ли найти её по
+                    внутренним ссылкам. Дальше отделяй проблемы обнаружения и обработки от проблем содержания и спроса.
+                    На следующей остановке разберём задачи пользователей — интенты.</p>
+            </details>
+            <p class="source">Источники: <a
+                    href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" target="_blank"
+                    rel="noopener noreferrer">Google: основы SEO</a></p><a class="winbtn" href="#world">Вернуться к
+                карте</a>
+        </div>
+    </section>
+    <section class="reading-mission" id="reading-m2" tabindex="-1" aria-labelledby="reading-title-m2">
+        <div class="dialoghead"><span>Остановка 2 · Режим чтения</span><a class="winbtn" href="#world">К карте ↗</a>
+        </div>
+        <div class="reading-body">
+            <h2 id="reading-title-m2">Чего хочет искатель?</h2>
+            <p class="curator"><b>Максимус</b>Человек что-то ищет. Наша работа — понять что. Телепатия в комплект не
+                входила, так что посмотрим на запросы.</p>
+            <article class="reading-step">
+                <p class="missiontag">Этап 1 из 5</p>
+                <h3>Сначала понять, потом выбрать</h3>
+                <div class="story">
+                    <p>Читатель вводит «почему конь в шахматах ходит буквой Г». В учебной выдаче преобладают объяснения
+                        правил с рисунками; страниц наборов почти нет. Магазин продаёт шахматы и ведёт блог.</p>
+                </div>
+                <p class="questiontitle">Какой материал лучше подготовить для этой задачи?</p>
+                <ol class="reading-options" type="A">
+                    <li>Подборку шахматных наборов с фильтрами по размеру доски</li>
+                    <li>Объяснение хода коня с примерами допустимых и ошибочных ходов</li>
+                    <li>Сравнение деревянных и пластиковых фигур для первой покупки</li>
+                    <li>Страницу конкретного набора с описанием фигур и комплектации</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>Какой вопрос должен перестать беспокоить читателя после посещения страницы?</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Объяснение хода коня с примерами допустимых и ошибочных ходов</div>
+                    <p>Пользователю нужно разобраться в правиле — это информационный интент. Каталог помогает покупать,
+                        а сравнение материалов — выбирать товар; оба решают другие задачи, хотя посвящены шахматам.</p>
+                </details>
+            </article>
+            <article class="reading-step">
+                <p class="missiontag">Этап 2 из 5</p>
+                <h3>Информация перед покупкой</h3>
+                <div class="story">
+                    <p>Запрос «деревянные или пластиковые шахматы для ребёнка» ведёт в учебной выдаче к сравнениям
+                        материалов, веса и прочности. Человек ещё не выбрал тип набора.</p>
+                </div>
+                <p class="questiontitle">Какой основной интент и формат здесь уместны?</p>
+                <ol class="reading-options" type="A">
+                    <li>Транзакционный: карточка самого популярного деревянного набора</li>
+                    <li>Информационный о правилах: урок первой партии для ребёнка</li>
+                    <li>Коммерческое исследование: сравнение наборов по условиям использования</li>
+                    <li>Навигационный: страница производителя пластиковых фигур</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p class="maximus-grumble">Ты хочешь разобраться в интенте или в моём терпении? Второе заканчивается
+                        быстрее.</p>
+                    <details>
+                        <summary>Ладно, подскажи</summary>
+                        <p>Вопрос относится к правилам игры или к выбору подходящего товара?</p>
+                    </details>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Коммерческое исследование: сравнение наборов по условиям использования
+                    </div>
+                    <p>Человек изучает информацию ради выбора покупки. Это коммерческое исследование: ему нужны критерии
+                        и компромиссы. Транзакционный интент возникает ближе к действию — например, когда модель выбрана
+                        и сравниваются предложения продавцов.</p>
+                </details>
+            </article>
+            <article class="reading-step">
+                <p class="missiontag">Этап 3 из 5</p>
+                <h3>Знакомый адрес через поиск</h3>
+                <div class="story">
+                    <p>Покупатель вводит «Игротека мой заказ». В учебной выдаче — раздел проверки заказа и справка
+                        самого магазина. Это покупатель, который уже оформил заказ в «Игротеке».</p>
+                </div>
+                <p class="questiontitle">Как точнее описать его задачу?</p>
+                <ol class="reading-options" type="A">
+                    <li>Узнать общий порядок доставки настольных игр в разных магазинах</li>
+                    <li>Попасть в раздел конкретного магазина и проверить свой заказ</li>
+                    <li>Сравнить надёжность магазинов перед выбором продавца</li>
+                    <li>Оформить новый заказ на странице категории игр</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>Человек ищет новую информацию о рынке или нужную дверь знакомого магазина?</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Попасть в раздел конкретного магазина и проверить свой заказ</div>
+                    <p>Это навигационный интент: поиск используется как путь к известному сервису или его разделу. Само
+                        наличие бренда не делает любой запрос навигационным: «Игротека отзывы перед покупкой» может
+                        выражать исследование продавца.</p>
+                </details>
+            </article>
+            <article class="reading-step">
+                <p class="missiontag">Этап 4 из 5</p>
+                <h3>Почтовое отделение: читаем запрос вместе с контекстом</h3>
+                <div class="story">
+                    <p>Максимус принёс четыре письма. Формулировки не содержат готовых ярлыков интента. Ниже даны
+                        наблюдения из вымышленной выдачи для одного языка и региона. Выбери лучшую посадочную из
+                        доступных.</p>
+                </div>
+                <p class="questiontitle">Сопоставь каждый запрос с задачей страницы.</p>
+                <ul>
+                    <li>«шахматы для начинающих взрослых» — 7 из 10 результатов предлагают наборы с ценами; остальные
+                        помогают выбрать комплект</li>
+                    <li>«конь через свою фигуру» — результаты разбирают позиции на доске и допустимые ходы</li>
+                    <li>«шахматы или шашки в 6 лет» — результаты сравнивают сложность освоения и выбор первой игры</li>
+                    <li>«Игротека где посылка» — результаты ведут к отслеживанию уже оформленного заказа</li>
+                </ul>
+                <p>Варианты страниц:</p>
+                <ol>
+                    <li>Категория наборов: ассортимент, цены, фильтры</li>
+                    <li>Пособие по правилам: схемы допустимых ходов</li>
+                    <li>Сравнение игр для выбора первой покупки</li>
+                    <li>Раздел магазина: проверка оформленного заказа</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>Используй не только слова запроса, но и указанную задачу найденных страниц.</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong>
+                        <ul>
+                            <li>«шахматы для начинающих взрослых» — 7 из 10 результатов предлагают наборы с ценами;
+                                остальные помогают выбрать комплект → Категория наборов: ассортимент, цены, фильтры</li>
+                            <li>«конь через свою фигуру» — результаты разбирают позиции на доске и допустимые ходы →
+                                Пособие по правилам: схемы допустимых ходов</li>
+                            <li>«шахматы или шашки в 6 лет» — результаты сравнивают сложность освоения и выбор первой
+                                игры → Сравнение игр для выбора первой покупки</li>
+                            <li>«Игротека где посылка» — результаты ведут к отслеживанию уже оформленного заказа →
+                                Раздел магазина: проверка оформленного заказа</li>
+                        </ul>
+                    </div>
+                    <p>Одинаковая тема не означает одну посадочную. В первом письме контекст выдачи поддерживает
+                        каталог, во втором нужна инструкция, в третьем — помощь с выбором, в четвёртом — конкретный
+                        сервис. Без контекста первый и третий запросы допускали бы несколько трактовок.</p>
+                </details>
+            </article>
+            <article class="reading-step">
+                <p class="missiontag">Этап 5 из 5</p>
+                <h3>Если запрос допускает два прочтения</h3>
+                <div class="story">
+                    <p>По запросу «шахматы для детей» на телефоне в нужном регионе видны и магазины наборов, и уроки. Ты
+                        готовишь структуру нового сайта, а собственных данных по запросу пока нет.</p>
+                </div>
+                <p class="questiontitle">Как выбрать направление для страницы магазина?</p>
+                <ol class="reading-options" type="A">
+                    <li>Взять интент самого частотного похожего запроса и распространить на всю группу</li>
+                    <li>Посчитать каталоги в первой проверке и считать эту долю постоянной для всех регионов</li>
+                    <li>Проверить уточняющие запросы и выдачу по ним, затем выбрать задачу под ассортимент</li>
+                    <li>Объединить каталог наборов и полный курс обучения на одной посадочной</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>Какие дополнительные данные позволят отделить выбор товара от обучения игре?</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Проверить уточняющие запросы и выдачу по ним, затем выбрать задачу под
+                        ассортимент</div>
+                    <p>У короткого запроса может быть смешанный интент. Уточнения и повторная проверка нужного рынка
+                        помогают выбрать обоснованную задачу. Единичный снимок выдачи — наблюдение, а не универсальное
+                        правило; смешивание всех материалов не гарантирует полезной страницы.</p>
+                </details>
+            </article>
+            <details class="reading-outcome">
+                <summary>Итог всей остановки</summary>
+                <h3>Четыре задачи за поисковым запросом</h3>
+                <h4>Информационный: разобраться</h4>
+                <p>«Почему конь перепрыгивает фигуры?» — человеку нужен ответ или навык. Страница помогает объяснением,
+                    примерами, схемой или инструкцией. Она может привести читателя к покупке позже, но её первая задача
+                    — удовлетворить запрос на знания.</p>
+                <h4>Коммерческий: выбрать</h4>
+                <p>«Деревянные или пластиковые шахматы?» — сравнение перед покупкой. Полезны критерии, ограничения,
+                    альтернативы и сценарии использования. В этой игре коммерческое исследование выделено отдельно от
+                    транзакционного интента. В рабочих разговорах словом «коммерческий» иногда называют оба.</p>
+                <h4>Транзакционный: выполнить действие</h4>
+                <p>Модель уже выбрана, человек ищет цену, наличие или способ заказа. Здесь помогают карточка товара,
+                    категория с подходящим ассортиментом и понятные условия. Не обязательно наличие слова «купить»:
+                    задачу нужно проверить по контексту.</p>
+                <h4>Навигационный: попасть в нужное место</h4>
+                <p>«Игротека мой заказ» — маршрут к конкретному сайту или разделу. А запрос с названием бренда и
+                    сравнением с конкурентом может иметь другую задачу. Смотри на намерение целиком.</p>
+                <h4>Как применять</h4>
+                <p>Составь связку «запрос → задача → тип страницы». Сверь её с выдачей в нужном регионе. У смешанных
+                    запросов возможны разные задачи: контекст помогает выбрать основную, а не угадывать по одному слову.
+                </p>
+            </details>
+            <p class="source">Источники: <a href="https://ahrefs.com/blog/search-intent/" target="_blank"
+                    rel="noopener noreferrer">Ahrefs: поисковый интент</a></p><a class="winbtn" href="#world">Вернуться
+                к карте</a>
+        </div>
+    </section>
+    <section class="reading-mission" id="reading-m3" tabindex="-1" aria-labelledby="reading-title-m3">
+        <div class="dialoghead"><span>Остановка 3 · Режим чтения</span><a class="winbtn" href="#world">К карте ↗</a>
+        </div>
+        <div class="reading-body">
+            <h2 id="reading-title-m3">Пульт Google Search Console</h2>
+            <p class="curator"><b>Максимус</b>Открываем GSC. Цифры сами себя не объяснят, хотя в отчётах иногда делают
+                вид, что объяснили.</p>
+            <article class="reading-step">
+                <p class="missiontag">Этап 1 из 2</p>
+                <h3>Запросы конкретной категории</h3>
+                <div class="story">
+                    <p>В GSC нужно выяснить, по каким запросам пользователи переходили на категорию /family-games/ из
+                        обычного веб-поиска Google за последние 28 полных дней. Важны именно запросы этой страницы.</p>
+                </div>
+                <p class="questiontitle">Как настроить отчёт?</p>
+                <ol class="reading-options" type="A">
+                    <li>Эффективность → Web → 28 дней → фильтр URL категории → вкладка «Запросы»</li>
+                    <li>Эффективность → Web → 28 дней → все URL сайта → вкладка «Запросы»</li>
+                    <li>Эффективность → Web → 28 дней → фильтр URL категории → вкладка «Страны»</li>
+                    <li>Эффективность → Изображения → 28 дней → фильтр URL категории → вкладка «Запросы»</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p class="maximus-grumble">Кнопок много, понимаю. Но нажать на меня — не единственный способ выбрать
+                        отчёт.</p>
+                    <details>
+                        <summary>Ладно, подскажи</summary>
+                        <p>Проверь три условия задачи: источник, адрес страницы и разрез данных.</p>
+                    </details>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Эффективность → Web → 28 дней → фильтр URL категории → вкладка
+                        «Запросы»</div>
+                    <p>Нужны и правильный тип поиска, и фильтр страницы, и нужное измерение. Без фильтра смешаются
+                        запросы всего сайта; вкладка стран отвечает на другой вопрос; поиск по изображениям имеет другой
+                        охват.</p>
+                </details>
+            </article>
+            <article class="reading-step">
+                <p class="missiontag">Этап 2 из 2</p>
+                <h3>Что позволяет сказать строка отчёта</h3>
+                <div class="story">
+                    <p>За 28 дней строка запроса показывает 1 000 показов, 50 кликов и среднюю позицию 4,2. В отчёт не
+                        добавляли данные аналитики или магазина.</p>
+                </div>
+                <p class="questiontitle">Какую запись можно перенести в отчёт без дополнительных допущений?</p>
+                <ol class="reading-options" type="A">
+                    <li>50 посетителей перешли из поиска; средняя позиция результата была 4,2</li>
+                    <li>Результат дал 50 кликов при 1 000 показах; заказы нужно смотреть отдельно</li>
+                    <li>Из 1 000 поисков запроса в стране сайт получил переходы в 50 случаях</li>
+                    <li>Сайт занимал четвёртое место при каждом показе и получил 50 кликов</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>Сохрани в выводе названия тех сущностей, которые измеряет сам отчёт.</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Результат дал 50 кликов при 1 000 показах; заказы нужно смотреть
+                        отдельно</div>
+                    <p>GSC измеряет показы результата и клики, а не уникальных посетителей или покупки. Показы сайта не
+                        равны всей частотности запроса. Средняя позиция объединяет наблюдения и не означает постоянное
+                        четвёртое место.</p>
+                </details>
+            </article>
+            <details class="reading-outcome">
+                <summary>Итог всей остановки</summary>
+                <h3>GSC: что происходило в поиске</h3>
+                <h4>Для чего нужен этот пульт</h4>
+                <p>Search Console показывает присутствие сайта в Google. Отчёт эффективности помогает находить запросы,
+                    страницы и сегменты, которые приносят показы и переходы. Это отправная точка для выбора тем,
+                    проверки изменений и расследования потерь видимости.</p>
+                <h4>Сначала задай рамки</h4>
+                <p>Выбери период, тип поиска, страницу или раздел. Затем добавляй страну, устройство и запрос, когда это
+                    нужно для гипотезы. Сравнивать срезы полезно только при совместимых настройках: Web и Изображения
+                    отвечают на разные вопросы.</p>
+                <h4>Не подменяй показатели</h4>
+                <p>Показ — учтённое появление результата, клик — переход по нему по правилам отчёта. Это не количество
+                    людей и не вся частотность запроса. Средняя позиция не описывает каждый показ. Часть запросов скрыта
+                    ради конфиденциальности, поэтому сумма видимых строк может отличаться от общего итога.</p>
+                <h4>Рабочее применение</h4>
+                <p>Запиши, какие страницы и запросы изменились, и сохрани фильтры вместе с выводом. После перехода
+                    посетителя на сайт потребуются данные аналитики: GSC сам по себе не объясняет, почему человек не
+                    оформил заказ.</p>
+            </details>
+            <p class="source">Источники: <a href="https://support.google.com/webmasters/answer/7576553?hl=en"
+                    target="_blank" rel="noopener noreferrer">Google: отчёт об эффективности GSC</a></p><a
+                class="winbtn" href="#world">Вернуться к карте</a>
+        </div>
+    </section>
+    <section class="reading-mission" id="reading-m4" tabindex="-1" aria-labelledby="reading-title-m4">
+        <div class="dialoghead"><span>Остановка 4 · Режим чтения</span><a class="winbtn" href="#world">К карте ↗</a>
+        </div>
+        <div class="reading-body">
+            <h2 id="reading-title-m4">CTR: от процента к решению</h2>
+            <p class="curator"><b>Максимус</b>Процент посчитать можно и на калькуляторе. Понять, что с ним делать,
+                придётся нам. Такая неприятность.</p>
+            <article class="reading-step">
+                <p class="missiontag">Этап 1 из 3</p>
+                <h3>Пятьдесят из тысячи</h3>
+                <div class="story">
+                    <p>Категория получила 1 000 показов и 50 кликов. Чтобы оценивать, какая доля показов приводит к
+                        переходу, используют CTR: клики ÷ показы × 100%. Сначала посчитаем его, затем решим, как
+                        применять результат.</p>
+                </div>
+                <div class="brief">
+                    <div class="brieftitle">УЧЕБНЫЕ ДАННЫЕ</div>
+                    <div class="briefbody">
+                        <table>
+                            <tr class="tableheader">
+                                <th>Показы</th>
+                                <th>Клики</th>
+                            </tr>
+                            <tr>
+                                <td data-label="Показы">1 000</td>
+                                <td data-label="Клики">50</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <p class="questiontitle">Какой CTR получился? Введи число в процентах.</p>
+                <p>Рассчитай ответ в %.</p>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p class="maximus-grumble">В смысле? Ты что, сам не можешь разобраться? Ладно, я тоже не с первого
+                        раза загрузился.</p>
+                    <details>
+                        <summary>Ладно, подскажи</summary>
+                        <p>Раздели число кликов на число показов и умножь результат на 100.</p>
+                    </details>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> 5 %</div>
+                    <p>50 ÷ 1 000 × 100 = 5%. Это доля кликов от показов в выбранном срезе. Сравнивать CTR полезно с
+                        учётом запросов, позиций и вида результатов поиска.</p>
+                </details>
+            </article>
+            <article class="reading-step">
+                <p class="missiontag">Этап 2 из 3</p>
+                <h3>CTR упал, но заголовок не меняли</h3>
+                <div class="story">
+                    <p>За два равных периода общий CTR категории снизился с 8% до 4%. Title остался прежним. В таблице —
+                        два сегмента её показов. Все числа учебные.</p>
+                </div>
+                <div class="brief">
+                    <div class="brieftitle">Разделение запросов</div>
+                    <div class="briefbody">
+                        <table>
+                            <tr class="tableheader">
+                                <th>Сегмент</th>
+                                <th>Показы до → после</th>
+                                <th>CTR до → после</th>
+                            </tr>
+                            <tr>
+                                <td data-label="Сегмент">Старые запросы</td>
+                                <td data-label="Показы до → после">10 000 → 10 000</td>
+                                <td data-label="CTR до → после">8% → 8%</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Сегмент">Новые запросы, позиции преимущественно 12–20</td>
+                                <td data-label="Показы до → после">0 → 20 000</td>
+                                <td data-label="CTR до → после">— → 2%</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <p class="questiontitle">Какой вывод лучше объясняет общий результат?</p>
+                <ol class="reading-options" type="A">
+                    <li>Нужно переписать Title: общий CTR показывает ухудшение самого объявления</li>
+                    <li>Увеличилась доля новых запросов с низким CTR; ухудшение старого сегмента не видно</li>
+                    <li>Нужно вернуть прежний объём показов: расширение видимости мешает категории</li>
+                    <li>Новые запросы нужно оценить как потерю кликов по старым запросам</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>Сложи клики и показы каждого периода. Изменились ли старые запросы?</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Увеличилась доля новых запросов с низким CTR; ухудшение старого
+                        сегмента не видно</div>
+                    <p>Раньше: 800 / 10 000 = 8%. Теперь: (800 + 400) / (10 000 + 20 000) = 4%. Старый сегмент сохранил
+                        8%, а кликов суммарно стало больше. Падение среднего CTR вызвано составом показов; оно не
+                        доказывает неудачный Title.</p>
+                </details>
+            </article>
+            <article class="reading-step">
+                <p class="missiontag">Этап 3 из 3</p>
+                <h3>Что проверить в первую очередь</h3>
+                <div class="story">
+                    <p>У страницы А на сопоставимом наборе запросов и устройств 20 000 показов, 400 кликов, стабильные
+                        позиции 4–6. Её заголовок в выдаче «Каталог №47» плохо описывает товары. У страницы Б 500
+                        показов, 5 кликов, позиции 35–45; заголовок точно описывает категорию.</p>
+                </div>
+                <p class="questiontitle">Для какой первой проверки CTR даёт более полезный повод?</p>
+                <ol class="reading-options" type="A">
+                    <li>Начать с заголовка Б: 1% меньше 2%, поэтому у Б больше потенциал дополнительных кликов</li>
+                    <li>Изменить заголовки А и Б и оценить результат только по общему CTR сайта</li>
+                    <li>Проверить выдачу и представление А; для Б отдельно исследовать слабую видимость</li>
+                    <li>Сравнить А и Б с единым нормативом CTR и исправить страницу с большим отклонением</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>Учитывай объём показов, позиции и конкретную гипотезу, а не только меньший процент.</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Проверить выдачу и представление А; для Б отдельно исследовать слабую
+                        видимость</div>
+                    <p>У А есть показы и конкретный недостаток представления. Если при прочих равных CTR вырос бы с 2%
+                        до 3%, это дало бы 200 дополнительных кликов, но это сценарий, не прогноз. У Б низкие позиции
+                        требуют другой диагностики. После правок проверяют и качество привлечённых переходов.</p>
+                </details>
+            </article>
+            <details class="reading-outcome">
+                <summary>Итог всей остановки</summary>
+                <h3>CTR помогает искать возможности</h3>
+                <h4>Что измеряет показатель</h4>
+                <p>CTR = клики / показы × 100%. Он показывает долю учтённых показов, закончившихся кликом. При
+                    одинаковом числе показов больший CTR даёт больше переходов, но сам процент ещё не говорит о качестве
+                    посетителей или заказах.</p>
+                <h4>Почему процент меняется</h4>
+                <p>На выбор результата влияют позиция, запрос, бренд, устройство и состав выдачи. Если сайт начал
+                    показываться по множеству новых запросов на низких позициях, средний CTR может снизиться при росте
+                    кликов. Поэтому сначала разделяй данные на сопоставимые группы.</p>
+                <h4>Как это влияет на работу SEO</h4>
+                <p>Выбирай страницы с заметным числом показов и проверяемой проблемой: непонятный заголовок, неверное
+                    обещание, несоответствие странице. Записывай изменение и дату, затем сравнивай похожие периоды и
+                    срезы. Улучшение процента без полезных переходов ещё не успех.</p>
+                <h4>Считай сценарий, а не обещание</h4>
+                <p>При 20 000 показов разница между 2% и 3% — 200 кликов. Эта оценка помогает расставить приоритеты, но
+                    не предсказывает результат. Здесь мы используем CTR как показатель для анализа; из роста CTR в GSC
+                    нельзя вывести доказанный причинный рост позиций.</p>
+            </details>
+            <p class="source">Источники: <a href="https://support.google.com/webmasters/answer/7576553?hl=en"
+                    target="_blank" rel="noopener noreferrer">Google: отчёт об эффективности GSC</a></p><a
+                class="winbtn" href="#world">Вернуться к карте</a>
+        </div>
+    </section>
+    <section class="reading-mission" id="reading-m5" tabindex="-1" aria-labelledby="reading-title-m5">
+        <div class="dialoghead"><span>Остановка 5 · Режим чтения</span><a class="winbtn" href="#world">К карте ↗</a>
+        </div>
+        <div class="reading-body">
+            <h2 id="reading-title-m5">Ссылочная лаборатория Ahrefs</h2>
+            <p class="curator"><b>Максимус</b>Красивое число DR. Почти хочется перестать думать. Но мы всё-таки откроем
+                сами сайты.</p>
+            <article class="reading-step">
+                <p class="missiontag">Этап 1 из 2</p>
+                <h3>Таинственный DR</h3>
+                <div class="story">
+                    <p>В Ahrefs у сайта магазина Domain Rating равен 24, а у конкурента — 65. Коллега говорит: «Значит,
+                        Google поставил конкуренту 65 баллов качества».</p>
+                </div>
+                <p class="questiontitle">Какое уточнение верно?</p>
+                <ol class="reading-options" type="A">
+                    <li>Относительная оценка силы ссылочного профиля домена в базе Ahrefs</li>
+                    <li>Оценка органической видимости домена по его позициям в Google</li>
+                    <li>Оценка ссылочного профиля конкретного URL вместо домена целиком</li>
+                    <li>Оценка вероятности роста трафика после получения новой ссылки</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>Посмотри, кто рассчитывает этот показатель.</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Относительная оценка силы ссылочного профиля домена в базе Ahrefs</div>
+                    <p>DR относится к модели Ahrefs и описывает относительную силу ссылочного профиля. Это не оценка,
+                        которую Google выдал сайту.</p>
+                </details>
+            </article>
+            <article class="reading-step">
+                <p class="missiontag">Этап 2 из 2</p>
+                <h3>Как проверить кандидата для экспертного материала</h3>
+                <div class="story">
+                    <p>Ты предлагаешь редакциям исследование о настольных играх. Журнал А имеет DR 38, профильную
+                        аудиторию и тематические материалы с редакционными ссылками. Портал Б имеет DR 71, но видимая
+                        посещаемость связана в основном со страницами купонов; раздел игр почти пуст. Данные
+                        предварительные.</p>
+                </div>
+                <p class="questiontitle">Какую проверку провести до выбора площадки?</p>
+                <ol class="reading-options" type="A">
+                    <li>Сравнить общий органический трафик доменов и выбрать больший независимо от раздела</li>
+                    <li>Изучить охват и качество разделов, реальные статьи и контекст ссылок на похожие исследования
+                    </li>
+                    <li>Сопоставить число исходящих ссылок доменов и выбрать сайт с меньшим числом</li>
+                    <li>Сравнить изменение DR за год и предпочесть домен с более быстрым ростом</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p class="maximus-grumble">DR красивый. А решение за тебя опять должен принимать старый системник?
+                    </p>
+                    <details>
+                        <summary>Ладно, подскажи</summary>
+                        <p>На какой странице и для каких читателей появится ссылка на исследование?</p>
+                    </details>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Изучить охват и качество разделов, реальные статьи и контекст ссылок на
+                        похожие исследования</div>
+                    <p>Исследованию нужна подходящая аудитория и содержательное редакционное размещение. Общий трафик,
+                        DR и число ссылок полезны как части проверки, но не заменяют анализ конкретных страниц. По
+                        вводным А выглядит тематически ближе; до проверки это кандидат, а не готовый вердикт.</p>
+                </details>
+            </article>
+            <details class="reading-outcome">
+                <summary>Итог всей остановки</summary>
+                <h3>Ссылка — это связь между страницами</h3>
+                <h4>Что показывает Ahrefs</h4>
+                <p>DR — относительная метрика доменного ссылочного профиля Ahrefs. Она помогает сравнивать сайты в
+                    рамках модели сервиса. Это не показатель Google, не оценка достоверности каждой статьи и не обещание
+                    позиций. Для URL и для домена нужны разные уровни анализа.</p>
+                <h4>Зачем разбирать сами ссылки</h4>
+                <p>Открой страницу-донор: понятна ли её тема, кто её читает, зачем в тексте нужна ссылка? Проверь,
+                    существует ли материал, куда ведёт ссылка и в каком контексте она поставлена. Большой показатель
+                    домена не делает любое размещение одинаково полезным.</p>
+                <h4>Практический порядок</h4>
+                <p>Собери кандидатов, проверь профильные разделы и похожие публикации, затем сравни ссылочные и
+                    поисковые данные. В отчёте отделяй измеренное сервисом от собственных выводов. Для нашего
+                    исследования тематический журнал заслуживает проверки даже при меньшем DR.</p>
+                <h4>Результат работы</h4>
+                <p>Хороший итог — обоснованный список площадок и причин выбора, а не число «нужно десять ссылок с DR
+                    70». Полезный материал и редакционная уместность дают основание для сотрудничества; конкретный
+                    SEO-эффект заранее не гарантируется.</p>
+            </details>
+            <p class="source">Источники: <a href="https://help.ahrefs.com/en/articles/1409408-what-is-domain-rating-dr"
+                    target="_blank" rel="noopener noreferrer">Ahrefs: Domain Rating</a></p><a class="winbtn"
+                href="#world">Вернуться к карте</a>
+        </div>
+    </section>
+    <section class="reading-mission" id="reading-m6" tabindex="-1" aria-labelledby="reading-title-m6">
+        <div class="dialoghead"><span>Остановка 6 · Режим чтения</span><a class="winbtn" href="#world">К карте ↗</a>
+        </div>
+        <div class="reading-body">
+            <h2 id="reading-title-m6">Мастерская семантики</h2>
+            <p class="curator"><b>Максимус</b>Тысяча ключей в выгрузке — ещё не стратегия. Да, я тоже расстроился. Будем
+                разбирать.</p>
+            <article class="reading-step">
+                <p class="missiontag">Этап 1 из 3</p>
+                <h3>Из ассортимента — в язык покупателей</h3>
+                <div class="story">
+                    <p>Магазин продаёт многоразовые бутылки для воды. В выгрузке смешаны запросы о бутылках, очистке
+                        воды, оптовой таре и ремонте кулеров. У магазина нет услуг ремонта и оптовых поставок.</p>
+                </div>
+                <p class="questiontitle">С чего начать подготовку семантики?</p>
+                <ol class="reading-options" type="A">
+                    <li>Отсортировать весь список по частотности и взять первые сто запросов</li>
+                    <li>Выделить задачи целевых покупателей и отобрать относящиеся к ассортименту группы</li>
+                    <li>Оставить только запросы со словом «купить», исключив вопросы об использовании</li>
+                    <li>Оставить только точное название категории, исключив разговорные формулировки</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>Какие задачи магазин действительно способен решить?</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Выделить задачи целевых покупателей и отобрать относящиеся к
+                        ассортименту группы</div>
+                    <p>Семантика описывает релевантный спрос. Перед приоритетами нужно убрать чужие услуги и рынки, но
+                        сохранить полезные синонимы и вопросы аудитории. Частотность не исправляет несоответствие
+                        бизнесу; информационные запросы могут стать темами поддержки покупателей.</p>
+                </details>
+            </article>
+            <article class="reading-step">
+                <p class="missiontag">Этап 2 из 3</p>
+                <h3>Три формулировки — сколько страниц?</h3>
+                <div class="story">
+                    <p>В списке есть «бутылка для воды многоразовая», «многоразовые бутылки» и «бутылки для воды
+                        купить». В учебной проверке их выдача заметно пересекается и ведёт к категориям с тем же
+                        ассортиментом.</p>
+                </div>
+                <p class="questiontitle">Какой первый вариант структуры обоснован?</p>
+                <ol class="reading-options" type="A">
+                    <li>Три категории: по одной на каждую форму ключевого запроса</li>
+                    <li>Категория для слова «купить» и отдельная статья для двух остальных форм</li>
+                    <li>Одна категория на общую задачу; вариации естественно раскрыть в её содержании</li>
+                    <li>Одна карточка самой популярной бутылки для всех трёх формулировок</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p class="maximus-grumble">Я бы предложил подумать. Но вижу, ты уже выбрал техническую поддержку.
+                    </p>
+                    <details>
+                        <summary>Ладно, подскажи</summary>
+                        <p>Есть ли у каждой предполагаемой страницы самостоятельная задача?</p>
+                    </details>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Одна категория на общую задачу; вариации естественно раскрыть в её
+                        содержании</div>
+                    <p>Разные слова могут описывать одну задачу. При данном пересечении выдачи и ассортименте одна
+                        категория — разумная стартовая посадочная. Кластеризацию проверяют по смыслу и результатам
+                        поиска, а не только по совпадению слов.</p>
+                </details>
+            </article>
+            <article class="reading-step">
+                <p class="missiontag">Этап 3 из 3</p>
+                <h3>Низкая частотность — не приговор</h3>
+                <div class="story">
+                    <p>На ближайшую неделю хватает ресурса на одну категорию. «Бутылка» имеет оценку 12 000 поисков, но
+                        смешивает тару и разные назначения. «Бутылка для воды 1 литр с трубочкой» имеет 180; в наличии
+                        15 подходящих моделей, а выдача содержит товарные подборки.</p>
+                </div>
+                <p class="questiontitle">Какой план проверки разумнее?</p>
+                <ol class="reading-options" type="A">
+                    <li>Выбрать «бутылка»: большая частотность перекрывает неопределённость задачи</li>
+                    <li>Оценить выдачу и конкуренцию узкой группы, спрос по её вариантам и пользу новой посадочной</li>
+                    <li>Сложить 12 000 и 180 и использовать сумму как прогноз переходов категории</li>
+                    <li>Сделать страницу под 180 поисков без проверки: длинные запросы всегда проще</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>Частотность — один из критериев. Что известно о соответствии запросов товару?</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Оценить выдачу и конкуренцию узкой группы, спрос по её вариантам и
+                        пользу новой посадочной</div>
+                    <p>Низкочастотная группа может лучше совпадать с ассортиментом. Но длина фразы не гарантирует
+                        простого продвижения, а оценка поисков не равна кликам сайта. Сначала проверяют весь кластер,
+                        выдачу и необходимость отдельной страницы.</p>
+                </details>
+            </article>
+            <details class="reading-outcome">
+                <summary>Итог всей остановки</summary>
+                <h3>Как ключевые запросы превращаются в структуру</h3>
+                <h4>Что мы собираем</h4>
+                <p>Ключевой запрос — формулировка, с которой человек ищет решение. Семантическое ядро — организованный
+                    набор релевантных запросов. Его используют для категорий, статей, ТЗ и проверки покрытия спроса; это
+                    не список фраз для многократного повторения.</p>
+                <h4>Откуда брать идеи</h4>
+                <p>Начни с ассортимента и вопросов клиентов, добавь собственные запросы из GSC и темы конкурентов.
+                    Ahrefs, Semrush и другие сервисы расширяют список и дают оценки. Результаты зависят от базы, региона
+                    и периода; выгрузка требует очистки.</p>
+                <h4>Как группировать</h4>
+                <p>Объединяй формулировки с общей задачей и подходящей посадочной. Проверяй пересечение выдачи и
+                    реальное содержание страниц. Близкие слова не всегда означают один кластер, а разные формулировки не
+                    всегда требуют разных URL.</p>
+                <h4>Как выбрать приоритет</h4>
+                <p>Учитывай релевантность, ассортимент, спрос по группе, конкуренцию, ценность для бизнеса и ресурс на
+                    страницу. Частотность — оценка поисков, не прогноз трафика. Перед созданием проверь: может ли
+                    существующая страница уже решать эту задачу?</p>
+            </details>
+            <p class="source">Источники: <a href="https://ahrefs.com/seo/keyword-research" target="_blank"
+                    rel="noopener noreferrer">Ahrefs: исследование ключевых запросов</a> · <a
+                    href="https://ahrefs.com/blog/search-intent/" target="_blank" rel="noopener noreferrer">Ahrefs:
+                    поисковый интент</a></p><a class="winbtn" href="#world">Вернуться к карте</a>
+        </div>
+    </section>
+    <section class="reading-mission" id="reading-m7" tabindex="-1" aria-labelledby="reading-title-m7">
+        <div class="dialoghead"><span>Остановка 7 · Режим чтения</span><a class="winbtn" href="#world">К карте ↗</a>
+        </div>
+        <div class="reading-body">
+            <h2 id="reading-title-m7">Что происходит после клика?</h2>
+            <p class="curator"><b>Максимус</b>Кликнули. И что дальше? Вот именно. Посмотрим, что люди делают после
+                перехода.</p>
+            <article class="reading-step">
+                <p class="missiontag">Этап 1 из 2</p>
+                <h3>Какой канал привёл сеансы с покупками?</h3>
+                <div class="story">
+                    <p>В GA4 настроено событие purchase и проверено, что тестовый заказ отправляется один раз.
+                        Руководитель просит сравнить покупки в сеансах из органического поиска и платных кампаний за
+                        месяц, независимо от того, где человека впервые привлекли.</p>
+                </div>
+                <p class="questiontitle">Какой разрез отвечает задаче?</p>
+                <ol class="reading-options" type="A">
+                    <li>Привлечение пользователей: первый канал пользователя и количество покупок</li>
+                    <li>Привлечение трафика: группа каналов сеанса и количество событий purchase</li>
+                    <li>Страницы и экраны: заголовок страницы и общее число просмотров</li>
+                    <li>События: имя события purchase и общий итог без разбивки на каналы</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>Какой момент нужен в задаче: первое знакомство человека с сайтом или рассматриваемый сеанс?</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Привлечение трафика: группа каналов сеанса и количество событий
+                        purchase</div>
+                    <p>Задача относится к источнику сеанса, поэтому нужен сеансовый канал. Первый канал пользователя
+                        отвечает, где его впервые привлекли. Общий итог purchase и просмотры страниц не дают нужного
+                        сравнения каналов. Это описание наблюдаемого распределения, а не доказательство причинного
+                        вклада рекламы.</p>
+                </details>
+            </article>
+            <article class="reading-step">
+                <p class="missiontag">Этап 2 из 2</p>
+                <h3>Клики GSC и сеансы GA4 расходятся</h3>
+                <div class="story">
+                    <p>GSC показывает 900 кликов из Web за 28 дней, а GA4 — 1 020 сеансов Organic Search за те же даты.
+                        Руководитель подозревает дублирование аналитики. До этого сравнивали только итоговые числа.</p>
+                </div>
+                <p class="questiontitle">Какая проверка должна предшествовать выводу о дублях?</p>
+                <ol class="reading-options" type="A">
+                    <li>Сопоставить все события page_view с кликами: это устранит различие единиц измерения</li>
+                    <li>Взять только новых пользователей GA4: их число должно совпасть с кликами GSC</li>
+                    <li>В GA4 выделить google / organic, сверить охват и даты, затем проверить сбор и различие кликов и
+                        сеансов</li>
+                    <li>Сократить период до одного дня: дневные клики должны равняться дневным сеансам</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p class="maximus-grumble">Цифры не сошлись — и сразу ко мне. А когда сходятся, меня даже не
+                        протирают.</p>
+                    <details>
+                        <summary>Ладно, подскажи</summary>
+                        <p>Сначала убедись, что сравниваешь один источник и совместимый охват данных.</p>
+                    </details>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> В GA4 выделить google / organic, сверить охват и даты, затем проверить
+                        сбор и различие кликов и сеансов</div>
+                    <p>Organic Search может включать другие поисковики. Даже после выделения Google клики и сеансы
+                        остаются разными сущностями; влияют сбор аналитики, согласие, временные границы и поведение.
+                        Подозрение на дубли нужно проверять событиями и реализацией, а не разницей двух итогов.</p>
+                </details>
+            </article>
+            <details class="reading-outcome">
+                <summary>Итог всей остановки</summary>
+                <h3>После перехода начинается другая часть истории</h3>
+                <h4>Зачем нужна аналитика</h4>
+                <p>GSC помогает понять видимость в поиске; GA4 — зарегистрированные взаимодействия на сайте. Для
+                    магазина это просмотр товара, добавление в корзину и покупка. До анализа нужно проверить отправку
+                    событий: ошибка измерения способна выглядеть как изменение бизнеса.</p>
+                <h4>Пользователь и сеанс — разные разрезы</h4>
+                <p>Первый канал пользователя описывает первое привлечение. Канал сеанса — источник рассматриваемого
+                    посещения. Один человек может сначала прийти из поиска, а позже из рекламы; поэтому выбор измерения
+                    меняет вопрос, на который отвечает отчёт.</p>
+                <h4>Почему итоги не обязаны совпасть</h4>
+                <p>Клики, сеансы, пользователи и события не взаимозаменяемы. При сравнении систем проверь источник,
+                    даты, набор страниц, согласие на аналитику и корректность настройки. Несовпадение не доказывает
+                    неисправность, но большое необъяснённое изменение заслуживает проверки.</p>
+                <h4>Как использовать для SEO</h4>
+                <p>Смотри не только на рост переходов, но и на полезные действия на посадочных. Сегмент с высоким CTR
+                    может плохо соответствовать предложению магазина. При этом распределение покупок по каналам в отчёте
+                    не является экспериментом, измеряющим причинный эффект каждого канала.</p>
+            </details>
+            <p class="source">Источники: <a href="https://support.google.com/analytics/answer/12923437?hl=en"
+                    target="_blank" rel="noopener noreferrer">Google: привлечение трафика в GA4</a> · <a
+                    href="https://support.google.com/webmasters/answer/7576553?hl=en" target="_blank"
+                    rel="noopener noreferrer">Google: отчёт об эффективности GSC</a></p><a class="winbtn"
+                href="#world">Вернуться к карте</a>
+        </div>
+    </section>
+    <section class="reading-mission" id="reading-m9" tabindex="-1" aria-labelledby="reading-title-m9">
+        <div class="dialoghead"><span>Остановка 8 · Режим чтения</span><a class="winbtn" href="#world">К карте ↗</a>
+        </div>
+        <div class="reading-body">
+            <h2 id="reading-title-m9">Вывеска для страницы</h2>
+            <p class="curator"><b>Максимус</b>Вывеска должна соответствовать содержимому. Сенсационная концепция.
+                Соберём title и описание.</p>
+            <article class="reading-step">
+                <p class="missiontag">Этап 1 из 4</p>
+                <h3>Что обещает заголовок?</h3>
+                <div class="story">
+                    <p>Страница /family-games/ — категория из 24 семейных настольных игр для разных возрастов. На ней
+                        есть цены и фильтры, но нет редакционного рейтинга или сравнительного тестирования.</p>
+                </div>
+                <p class="questiontitle">Какой Title соответствует назначению страницы?</p>
+                <ol class="reading-options" type="A">
+                    <li>Лучшие семейные настольные игры: рейтинг 24 игр | Игротека</li>
+                    <li>Семейные настольные игры: каталог и цены | Игротека</li>
+                    <li>Как выбрать семейную настольную игру: советы | Игротека</li>
+                    <li>Настольные игры «Лесные»: цена и комплектация | Игротека</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>Что посетитель действительно найдёт после клика?</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Семейные настольные игры: каталог и цены | Игротека</div>
+                    <p>Категория предлагает ассортимент и цены. «Лучшие» и «рейтинг» обещают редакционный отбор, «как
+                        выбрать» — руководство, конкретная модель — карточку товара. Хороший Title точно называет
+                        содержание, а не просто содержит тематические слова.</p>
+                </details>
+            </article>
+            <article class="reading-step">
+                <p class="missiontag">Этап 2 из 4</p>
+                <h3>Собери вывеску из блоков</h3>
+                <div class="story">
+                    <p>Для той же категории собери Title по редакционному шаблону: <b>тема категории — короткий CTA |
+                            бренд</b>. CTA — призыв к действию. Категория позволяет выбирать товары, но у магазина нет
+                        гарантии самой низкой цены. Это правило нашего упражнения, а не обязательная формула для всех
+                        сайтов.</p>
+                </div>
+                <p class="questiontitle">Добавь три блока в указанном порядке. Нажатие на выбранный блок убирает его;
+                    после этого его можно поставить в другое место.</p>
+                <p>Доступные блоки:</p>
+                <ul>
+                    <li>Как выбрать настольную игру <small>(Ключевые фразы)</small></li>
+                    <li>Семейные настольные игры <small>(Ключевые фразы)</small></li>
+                    <li>Лучшие семейные игры: рейтинг <small>(Ключевые фразы)</small></li>
+                    <li>Настольная игра «Лесные» <small>(Ключевые фразы)</small></li>
+                    <li>изучите правила <small>(Призыв к действию)</small></li>
+                    <li>выберите игру <small>(Призыв к действию)</small></li>
+                    <li>купите дешевле всех <small>(Призыв к действию)</small></li>
+                    <li>Игротека <small>(Бренд)</small></li>
+                </ul>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p class="maximus-grumble">Три блока. Целых три. Ладно, я сегодня почти добрый.</p>
+                    <details>
+                        <summary>Ладно, подскажи</summary>
+                        <p>Выбирай фразу про ассортимент категории, выполнимое действие и бренд. Схема упражнения: тема
+                            → CTA → бренд.</p>
+                    </details>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Семейные настольные игры — выберите игру | Игротека</div>
+                    <p>Получилось: «Семейные настольные игры — выберите игру | Игротека». Фраза соответствует категории,
+                        CTA доступному действию, бренд узнаваем. Руководство и рейтинг отражают другие задачи; обещание
+                        самой низкой цены не подтверждено. CTA не обязателен для SEO — здесь мы тренируем
+                        согласованность трёх частей.</p>
+                </details>
+            </article>
+            <article class="reading-step">
+                <p class="missiontag">Этап 3 из 4</p>
+                <h3>Description продолжает обещание</h3>
+                <div class="story">
+                    <p>У категории 24 игры. Есть фильтры возраста и числа игроков, видны цены. Бесплатная доставка
+                        действует только от определённой суммы, а срок зависит от города.</p>
+                </div>
+                <p class="questiontitle">Какое описание можно опубликовать без неподтверждённых обещаний?</p>
+                <ol class="reading-options" type="A">
+                    <li>24 семейные настольные игры: цены, возраст и число игроков. Сравните варианты в каталоге
+                        «Игротеки».</li>
+                    <li>24 лучшие семейные игры по итогам тестирования. Наш рейтинг поможет выбрать победителя для всей
+                        семьи.</li>
+                    <li>Семейные настольные игры с бесплатной доставкой завтра. Выбирайте любую из 24 игр в каталоге
+                        «Игротеки».</li>
+                    <li>Пошаговый гид по выбору семейной игры: разбираем правила и стратегии для новичков в «Игротеке».
+                    </li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>Сверь каждое обещание с фактами о странице и доставке.</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> 24 семейные настольные игры: цены, возраст и число игроков. Сравните
+                        варианты в каталоге «Игротеки».</div>
+                    <p>Первое описание опирается на доступные возможности страницы. Остальные обещают рейтинг, доставку
+                        без условий или полноценное руководство. Description должен дополнять Title полезной
+                        конкретикой, а не создавать ожидания, которые страница не выполняет.</p>
+                </details>
+            </article>
+            <article class="reading-step">
+                <p class="missiontag">Этап 4 из 4</p>
+                <h3>Почему Google показывает другой текст?</h3>
+                <div class="story">
+                    <p>Ты записал точный meta description. По запросу «семейная игра для двоих» Google показывает в
+                        описании фрагмент текста категории про число игроков. В HTML новый description есть, а страница
+                        доступна.</p>
+                </div>
+                <p class="questiontitle">Какое действие наиболее обоснованно?</p>
+                <ol class="reading-options" type="A">
+                    <li>Удалить текст про двух игроков, чтобы Google пришлось использовать meta description</li>
+                    <li>Повторить description в начале каждого блока страницы, усилив одинаковый сигнал</li>
+                    <li>Проверить соответствие фрагмента запросу и странице; при неточности улучшить исходный текст</li>
+                    <li>Переопубликовать description с большим числом точных повторений запроса</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>Сначала оцени качество показанного ответа, а не его буквальное совпадение с метатегом.</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Проверить соответствие фрагмента запросу и странице; при неточности
+                        улучшить исходный текст</div>
+                    <p>Сниппет может формироваться из содержимого страницы под конкретный запрос. Meta description —
+                        возможный источник, а не обязательный текст показа. Если фрагмент точен и полезен, само отличие
+                        не означает ошибку; если нет — исправляют содержание и проверяют результат.</p>
+                </details>
+            </article>
+            <details class="reading-outcome">
+                <summary>Итог всей остановки</summary>
+                <h3>Title и description: два уровня обещания</h3>
+                <h4>Заголовок</h4>
+                <p>Title называет тему и назначение страницы. Выбирай основную задачу, добавляй полезное уточнение и при
+                    необходимости бренд. В упражнении был задан порядок блоков для проверки, но у реальных сайтов нет
+                    единственной правильной формулы. CTA нужен только когда уместен и не делает фразу тяжёлой.</p>
+                <h4>Описание</h4>
+                <p>Meta description кратко объясняет, что человек найдёт на странице. Используй проверяемые свойства:
+                    ассортимент, фильтры, содержание инструкции. Условия доставки и другие ограничения нельзя превращать
+                    в безусловные обещания ради привлекательности.</p>
+                <h4>Что увидит человек</h4>
+                <p>Google формирует заголовок ссылки и сниппет из доступных источников; они могут отличаться от
+                    метатегов. Длина отображения зависит от ситуации, поэтому счётчик символов не гарантирует полный
+                    показ. Важны ясность и точность, а не заполнение лимита.</p>
+                <h4>Как проверить результат</h4>
+                <p>Сохрани старый текст и дату изменения. Посмотри показ по основным запросам, затем сравни клики и CTR
+                    в сопоставимом срезе. Если после правки выросла кликабельность, проверь и дальнейшие действия:
+                    обещание должно приводить подходящую аудиторию.</p>
+            </details>
+            <p class="source">Источники: <a href="https://developers.google.com/search/docs/appearance/title-link"
+                    target="_blank" rel="noopener noreferrer">Google: заголовки результатов поиска</a> · <a
+                    href="https://developers.google.com/search/docs/appearance/snippet" target="_blank"
+                    rel="noopener noreferrer">Google: описания и сниппеты</a></p><a class="winbtn"
+                href="#world">Вернуться к карте</a>
+        </div>
+    </section>
+    <section class="reading-mission" id="reading-m10" tabindex="-1" aria-labelledby="reading-title-m10">
+        <div class="dialoghead"><span>Остановка 9 · Режим чтения</span><a class="winbtn" href="#world">К карте ↗</a>
+        </div>
+        <div class="reading-body">
+            <h2 id="reading-title-m10">Две двери: обход и индекс</h2>
+            <p class="curator"><b>Максимус</b>Обход и индекс — две разные вещи. Я бы повесил табличку, но у меня вместо
+                рук периферия.</p>
+            <article class="reading-step">
+                <p class="missiontag">Этап 1 из 2</p>
+                <h3>Что делает Disallow?</h3>
+                <div class="story">
+                    <p>Разработчик добавил в robots.txt правило Disallow для страницы. Он ожидает, что URL обязательно
+                        исчезнет из поиска.</p>
+                </div>
+                <p class="questiontitle">Верно ли это ожидание?</p>
+                <ol class="reading-options" type="A">
+                    <li>После следующей загрузки robots.txt URL гарантированно исчезнет из выдачи</li>
+                    <li>Обход будет ограничен, но один Disallow не гарантирует исключения URL из индекса</li>
+                    <li>Страница останется доступной роботу, но будут исключены переходы по её ссылкам</li>
+                    <li>URL автоматически станет дублем ближайшей доступной родительской страницы</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>Представь, что робот знает адрес, но не может открыть дверь.</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Обход будет ограничен, но один Disallow не гарантирует исключения URL
+                        из индекса</div>
+                    <p>robots.txt регулирует обход. Поисковик может знать о заблокированном URL из других источников.
+                        Поэтому запрет обхода не равен гарантированному удалению из поиска.</p>
+                </details>
+            </article>
+            <article class="reading-step">
+                <p class="missiontag">Этап 2 из 2</p>
+                <h3>Как робот прочитает noindex?</h3>
+                <div class="story">
+                    <p>Владелец хочет исключить открытую служебную страницу из поиска с помощью noindex. Сейчас эту
+                        страницу одновременно блокирует robots.txt.</p>
+                </div>
+                <p class="questiontitle">Что нужно учесть?</p>
+                <ol class="reading-options" type="A">
+                    <li>Разрешить обход, чтобы робот мог получить страницу и обработать noindex</li>
+                    <li>Сохранить Disallow, а наличие noindex проверить только в собственном браузере</li>
+                    <li>Убрать URL из sitemap и ожидать обработки noindex без повторного обхода</li>
+                    <li>Указать URL в другом sitemap, чтобы передать noindex через файл карты</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p class="maximus-grumble">Снова я? У меня вообще-то обед. Точнее, обновления. Разница небольшая.
+                    </p>
+                    <details>
+                        <summary>Ладно, подскажи</summary>
+                        <p>Инструкция находится внутри страницы. Сможет ли робот её увидеть?</p>
+                    </details>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Разрешить обход, чтобы робот мог получить страницу и обработать noindex
+                    </div>
+                    <p>Если робот не может загрузить страницу, он не сможет прочитать размещённый на ней noindex. Для
+                        конфиденциальных данных нужны меры контроля доступа; noindex не является защитой информации.</p>
+                </details>
+            </article>
+            <details class="reading-outcome">
+                <summary>Итог всей остановки</summary>
+                <h3>Обход и индекс управляются по-разному</h3>
+                <h4>Обход — получить содержимое</h4>
+                <p>Робот запрашивает страницу и читает доступные инструкции. Robots.txt помогает управлять этим
+                    доступом. Если URL закрыт для обхода, поисковик не сможет прочитать новый noindex, размещённый
+                    внутри этой страницы.</p>
+                <h4>Индекс — возможность участвовать в поиске</h4>
+                <p>Noindex сообщает, что страницу не следует включать в индекс. Для обработки HTML-инструкции робот
+                    должен получить страницу. Запрет обхода и исключение из индекса поэтому нельзя считать одним
+                    действием.</p>
+                <h4>Выбирай средство под задачу</h4>
+                <p>Для служебной доступной страницы может требоваться noindex; для переезда — перенаправление; для
+                    дублей — согласованная каноникализация. Это разные ситуации. Robots.txt также не защищает секретные
+                    данные: для приватного раздела нужен контроль доступа.</p>
+                <h4>Как проверять</h4>
+                <p>Сначала проверь HTTP-ответ, доступность обхода и реальные инструкции в HTML или заголовках. Затем
+                    посмотри статус URL и дату последнего обхода в GSC. Правка в коде подтверждает внедрение, но не
+                    мгновенную обработку поиском.</p>
+            </details>
+            <p class="source">Источники: <a
+                    href="https://developers.google.com/search/docs/crawling-indexing/robots/intro" target="_blank"
+                    rel="noopener noreferrer">Google: robots.txt</a> · <a
+                    href="https://developers.google.com/search/docs/crawling-indexing/block-indexing" target="_blank"
+                    rel="noopener noreferrer">Google: инструкция noindex</a></p><a class="winbtn"
+                href="#world">Вернуться к карте</a>
+        </div>
+    </section>
+    <section class="reading-mission" id="reading-m11" tabindex="-1" aria-labelledby="reading-title-m11">
+        <div class="dialoghead"><span>Остановка 10 · Режим чтения</span><a class="winbtn" href="#world">К карте ↗</a>
+        </div>
+        <div class="reading-body">
+            <h2 id="reading-title-m11">Найти главный экземпляр</h2>
+            <p class="curator"><b>Максимус</b>Два адреса, одна страница. Поисковик выбрал любимчика. Проверим, совпали
+                ли ваши вкусы.</p>
+            <article class="reading-step">
+                <p class="missiontag">Этап 1 из 2</p>
+                <h3>Один товар открыт по двум адресам</h3>
+                <div class="story">
+                    <p>Одинаковая карточка чайника доступна по /kettle/ и /kettle/?color=white. В этом учебном примере
+                        параметр не меняет ни выбранный товар, ни содержимое. Обе страницы возвращают 200. В HTML второй
+                        страницы стоит canonical на /kettle/.</p>
+                </div>
+                <p class="questiontitle">Что произойдёт при открытии ссылки с параметром и что она сообщает поиску?</p>
+                <ol class="reading-options" type="A">
+                    <li>Посетитель останется на URL с параметром; canonical указывает предпочтительную версию для поиска
+                    </li>
+                    <li>Посетитель автоматически перейдёт на /kettle/; canonical работает как HTTP-перенаправление</li>
+                    <li>Посетитель останется на URL с параметром; canonical запрещает поисковику обходить его</li>
+                    <li>Посетитель увидит ошибку дубля; canonical делает второй адрес недоступным</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p class="maximus-grumble">Условие ещё на экране. Оно не убежало. Я проверил.</p>
+                    <details>
+                        <summary>Ладно, подскажи</summary>
+                        <p>Раздели поведение браузера посетителя и сигнал, предназначенный поисковику.</p>
+                    </details>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Посетитель останется на URL с параметром; canonical указывает
+                        предпочтительную версию для поиска</div>
+                    <p>Canonical — указание предпочтительного представителя одинаковых или очень похожих страниц. Он сам
+                        не меняет адрес у посетителя и не равен запрету обхода. Google учитывает его вместе с другими
+                        сигналами и может выбрать другую версию.</p>
+                </details>
+            </article>
+            <article class="reading-step">
+                <p class="missiontag">Этап 2 из 2</p>
+                <h3>Указали один URL, выбран другой</h3>
+                <div class="story">
+                    <p>Магазин хочет продвигать /kettle/. GSC для него показывает выбранный Google адрес /promo/kettle/.
+                        На промостранице скопированы товар, описание и цена. В меню и sitemap ведёт /promo/kettle/, а её
+                        canonical указывает на неё же. Обе страницы нужны пользователям и должны оставаться доступными.
+                    </p>
+                </div>
+                <p class="questiontitle">Как согласовать предпочтение магазина?</p>
+                <ol class="reading-options" type="A">
+                    <li>Оставить меню и sitemap на промоверсии, добавив self-canonical только на /kettle/</li>
+                    <li>Указать /kettle/ в canonical промоверсии и основной страницы, обновить внутренние ссылки и
+                        sitemap</li>
+                    <li>Закрыть промоверсию в robots.txt и сохранить её canonical и ссылки без изменений</li>
+                    <li>Поставить canonical с /kettle/ на промоверсию, сохранив основным адресом в плане /kettle/</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>Все ли способы указания предпочтительного адреса говорят об одной версии?</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Указать /kettle/ в canonical промоверсии и основной страницы, обновить
+                        внутренние ссылки и sitemap</div>
+                    <p>Здесь сигналы противоречат выбранной цели. Нужно последовательно указывать основной URL;
+                        canonical оставляет промоверсию доступной посетителям. Если отдельный дубль больше не нужен,
+                        можно рассмотреть постоянное перенаправление, но в условии оба адреса должны работать.</p>
+                </details>
+            </article>
+            <details class="reading-outcome">
+                <summary>Итог всей остановки</summary>
+                <h3>Canonical: предпочтительная версия содержания</h3>
+                <h4>Откуда берутся дубли</h4>
+                <p>Одна карточка может открываться через параметр, рекламный путь или старый адрес. Если содержание
+                    одинаковое или очень близкое, поисковику нужно выбрать представителя группы. Отдельная статья о
+                    товаре при этом не обязательно является дублем карточки.</p>
+                <h4>Что делает указание</h4>
+                <p>Rel="canonical" сообщает предпочтительный URL, но не перенаправляет посетителя. Это сильный сигнал, а
+                    не безусловный приказ. Перенаправление уместно, когда старый дубль больше не нужен; canonical
+                    полезен, когда несколько адресов должны оставаться доступными.</p>
+                <h4>Убери противоречия</h4>
+                <p>Проверь canonical основной версии и дублей, внутренние ссылки и sitemap. Если каждый элемент
+                    рекомендует разный URL, намерение сайта непоследовательно. Не используй массовый canonical на
+                    главную для страниц с самостоятельным содержанием.</p>
+                <h4>Проверь обработку</h4>
+                <p>В URL Inspection различай указанный сайтом и выбранный Google канонический адрес. Текущий HTML и
+                    сведения о ранее обработанной версии могут расходиться по времени. После изменения отслеживай
+                    повторный обход, выбранную версию и показатели группы URL.</p>
+            </details>
+            <p class="source">Источники: <a
+                    href="https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls"
+                    target="_blank" rel="noopener noreferrer">Google: выбор канонического URL</a> · <a
+                    href="https://developers.google.com/search/docs/crawling-indexing/canonicalization" target="_blank"
+                    rel="noopener noreferrer">Google: как выбирается канонический URL</a> · <a
+                    href="https://support.google.com/webmasters/answer/9012289?hl=en" target="_blank"
+                    rel="noopener noreferrer">Google: проверка URL</a></p><a class="winbtn" href="#world">Вернуться к
+                карте</a>
+        </div>
+    </section>
+    <section class="reading-mission" id="reading-m12" tabindex="-1" aria-labelledby="reading-title-m12">
+        <div class="dialoghead"><span>Остановка 11 · Режим чтения</span><a class="winbtn" href="#world">К карте ↗</a>
+        </div>
+        <div class="reading-body">
+            <h2 id="reading-title-m12">Дело о пропавших кликах</h2>
+            <p class="curator"><b>Максимус</b>Клики пропали. Паника уже назначена или сначала посмотрим данные? Я за
+                второй вариант. Он тише.</p>
+            <article class="reading-step">
+                <p class="missiontag">Этап 1 из 5</p>
+                <h3>1. Падение в категориях</h3>
+                <div class="story">
+                    <p>Интернет-магазин «Дом Кофе» потерял клики после запуска нового раздела промоподборок.
+                        Сравниваются два периода по 28 полных дней, одна страна и Web. В цифры категорий включены и
+                        обычные, и новые промоадреса. Все данные кейса вымышлены.</p>
+                </div>
+                <div class="brief">
+                    <div class="brieftitle">GSC · до и после</div>
+                    <div class="briefbody">
+                        <table>
+                            <tr class="tableheader">
+                                <th>Раздел</th>
+                                <th>Клики до</th>
+                                <th>Клики после</th>
+                            </tr>
+                            <tr>
+                                <td data-label="Раздел">Категории + их промокопии</td>
+                                <td data-label="Клики до">5 000</td>
+                                <td data-label="Клики после">3 100</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Раздел">Блог</td>
+                                <td data-label="Клики до">2 000</td>
+                                <td data-label="Клики после">2 040</td>
+                            </tr>
+                        </table>
+                        <p>Падение группы категорий — 38%. Показы группы: 100 000 → 64 000.</p>
+                    </div>
+                </div>
+                <p class="questiontitle">Как сузить расследование?</p>
+                <ol class="reading-options" type="A">
+                    <li>Сравнить потерявшие клики категории и промоадреса по запросам и датам изменения</li>
+                    <li>Переписать описания всех категорий, начиная с самых длинных текстов</li>
+                    <li>Начать замену заголовков блога, поскольку он сохранил прежний уровень</li>
+                    <li>Оценить весь сайт только по средней позиции без разделения URL</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>Какой раздел изменился и что уже включено в его итог?</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Сравнить потерявшие клики категории и промоадреса по запросам и датам
+                        изменения</div>
+                    <p>Потери сосредоточены в группе категорий. Новые адреса уже включены в итог, поэтому нельзя
+                        объяснить всё переносом строк отчёта на другой URL. Связь с релизом — гипотеза: её нужно
+                        подтвердить данными страниц.</p>
+                </details>
+            </article>
+            <article class="reading-step">
+                <p class="missiontag">Этап 2 из 5</p>
+                <h3>2. Проверяем версии страниц</h3>
+                <div class="story">
+                    <p>По фиксированной группе запросов ухудшилась видимость категорий. Ручных мер в GSC нет. После
+                        релиза у многих категорий появилась копия в /offers/. На части основных URL GSC сообщает, что
+                        Google выбрал другую каноническую страницу.</p>
+                </div>
+                <p class="questiontitle">Какие данные помогут проверить эту гипотезу?</p>
+                <ol class="reading-options" type="A">
+                    <li>Общий DR домена и суммарное число новых внешних ссылок после релиза</li>
+                    <li>Количество слов и уникальность только основных категорий без сравнения копий</li>
+                    <li>Пары URL, выбранные канонические адреса, содержимое, canonical, ссылки и sitemap</li>
+                    <li>Средний CTR всех страниц сайта и даты редактирования заголовков блога</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>Какие данные показывают не только страницу, но и связь между её версиями?</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Пары URL, выбранные канонические адреса, содержимое, canonical, ссылки
+                        и sitemap</div>
+                    <p>Нужно сопоставить каждую основную страницу с выбранным дублем и проверить, почему сайт может
+                        рекомендовать другую версию. Проверка одной метрики или одного текста не описывает отношения
+                        двух URL.</p>
+                </details>
+            </article>
+            <article class="reading-step">
+                <p class="missiontag">Этап 3 из 5</p>
+                <h3>3. Google выбрал промокопию</h3>
+                <div class="story">
+                    <p>Проверена пара /coffee-machines/ и /offers/coffee-machines/. Промокопию сделали, скопировав
+                        категорию для кампании, но отдельного ассортимента или условий не добавили. В GSC основная
+                        категория указана как дубль с другой выбранной канонической страницей. Это повторяется у 74 из
+                        120 пар.</p>
+                </div>
+                <div class="brief">
+                    <div class="brieftitle">Одна из 74 пар</div>
+                    <div class="briefbody">
+                        <table>
+                            <tr class="tableheader">
+                                <th>Проверка</th>
+                                <th>Основная категория</th>
+                                <th>Промокопия</th>
+                            </tr>
+                            <tr>
+                                <td data-label="Проверка">HTTP / noindex</td>
+                                <td data-label="Основная категория">200 / отсутствует</td>
+                                <td data-label="Промокопия">200 / отсутствует</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Проверка">Товарная сетка и основной текст</td>
+                                <td data-label="Основная категория">Совпадают</td>
+                                <td data-label="Промокопия">Совпадают</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Проверка">Canonical в HTML</td>
+                                <td data-label="Основная категория">На основную категорию</td>
+                                <td data-label="Промокопия">На промокопию</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Проверка">Меню и sitemap</td>
+                                <td data-label="Основная категория">Не указывают</td>
+                                <td data-label="Промокопия">Указывают</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Проверка">Выбор Google в GSC</td>
+                                <td data-label="Основная категория">Промокопия</td>
+                                <td data-label="Промокопия">Промокопия</td>
+                            </tr>
+                        </table>
+                        <p>Дата обхода в GSC — после запуска раздела /offers/.</p>
+                    </div>
+                </div>
+                <p class="questiontitle">Какое объяснение подтверждено этой проверкой?</p>
+                <ol class="reading-options" type="A">
+                    <li>Google обнаружил совпадающие тексты и применил ручную меру к основным категориям</li>
+                    <li>Сайт даёт противоречивые сигналы о близких версиях, и Google выбрал промоадреса</li>
+                    <li>Промоадреса выбраны потому, что каталогам запрещено участвовать в поиске вместе с акциями</li>
+                    <li>Основные категории удалены с сервера: выбор другого URL подтверждает ответ 404</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>Отдели подтверждённый выбор версии от предположения о наказании.</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Сайт даёт противоречивые сигналы о близких версиях, и Google выбрал
+                        промоадреса</div>
+                    <p>Обе версии доступны, но содержимое совпадает, а навигация и sitemap поддерживают промокопии.
+                        Подтверждена нежелательная каноникализация, а не штраф за копирование. Она объясняет выбор
+                        адресов; точный вклад этой проблемы во все потерянные клики пока не изолирован.</p>
+                </details>
+            </article>
+            <article class="reading-step">
+                <p class="missiontag">Этап 4 из 5</p>
+                <h3>4. Составляем точное ТЗ</h3>
+                <div class="story">
+                    <p>Маркетинг подтвердил: 120 промокопий не нужны как отдельные страницы. Старые рекламные ссылки
+                        должны приводить к соответствующим категориям; содержание и товары там эквивалентны. Основные
+                        категории остаются целевыми URL.</p>
+                </div>
+                <p class="questiontitle">Какое исправление соответствует условиям?</p>
+                <ol class="reading-options" type="A">
+                    <li>Оставить промокопии с кодом 200, добавить только canonical и сохранить их в меню</li>
+                    <li>Закрыть /offers/ от обхода и оставить старые рекламные ссылки на этих адресах</li>
+                    <li>Перенаправить каждую промокопию на её категорию; обновить ссылки, canonical категорий и sitemap
+                    </li>
+                    <li>Сохранить копии и переписать вводные абзацы, не меняя ассортимент и навигацию</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p class="maximus-grumble">ТЗ само себя не напишет. Хотя я, судя по всему, уже назначен
+                        ответственным.</p>
+                    <details>
+                        <summary>Ладно, подскажи</summary>
+                        <p>Нужно ли по условиям сохранять отдельный доступный документ на промоадресе?</p>
+                    </details>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Перенаправить каждую промокопию на её категорию; обновить ссылки,
+                        canonical категорий и sitemap</div>
+                    <p>Дубли больше не нужны, поэтому подходят постоянные перенаправления на эквивалентные категории.
+                        Все внутренние сигналы согласуются с основной версией. Если бы копии требовались пользователям,
+                        canonical мог бы быть частью другого плана. Формальная замена абзацев не устраняет ненужную
+                        структуру.</p>
+                </details>
+            </article>
+            <article class="reading-step">
+                <p class="missiontag">Этап 5 из 5</p>
+                <h3>5. Проверяем результат, а не факт релиза</h3>
+                <div class="story">
+                    <p>Контрольный обход подтвердил: 120 промокопий за один постоянный переход ведут на нужные категории
+                        с кодом 200. Внутренние ссылки и sitemap исправлены. Через 28 дней данные изменились так, как
+                        показано ниже.</p>
+                </div>
+                <div class="brief">
+                    <div class="brieftitle">Контроль после исправления</div>
+                    <div class="briefbody">
+                        <table>
+                            <tr class="tableheader">
+                                <th>Показатель</th>
+                                <th>Перед исправлением</th>
+                                <th>Через 28 дней</th>
+                            </tr>
+                            <tr>
+                                <td data-label="Показатель">Основная категория выбрана Google</td>
+                                <td data-label="Перед исправлением">46 / 120</td>
+                                <td data-label="Через 28 дней">110 / 120</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Показатель">Клики всей группы за 28 дней</td>
+                                <td data-label="Перед исправлением">3 100</td>
+                                <td data-label="Через 28 дней">4 650</td>
+                            </tr>
+                        </table>
+                        <p>Клики считаются по всем основным и промоадресам вместе. Сезонность и другие изменения не
+                            изолированы.</p>
+                    </div>
+                </div>
+                <p class="questiontitle">Какой статус и дальнейший контроль записать?</p>
+                <ol class="reading-options" type="A">
+                    <li>Исправление внедрено; 10 пар ещё требуют проверки, а вклад в рост кликов оцениваем осторожно
+                    </li>
+                    <li>Все 120 пар уже обработаны Google, поскольку технический обход не нашёл ошибок</li>
+                    <li>Оставить открытыми только задачи по CTR: совпадение canonical уже не имеет значения</li>
+                    <li>Вернуть 10 промокопий с кодом 200, поскольку неполная обработка означает ошибочность плана</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>Сколько пар подтверждено самим поиском, а сколько — только нашим обходом?</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Исправление внедрено; 10 пар ещё требуют проверки, а вклад в рост
+                        кликов оцениваем осторожно</div>
+                    <p>Внедрение и обработка поиском — разные этапы. Проверено техническое состояние, у 110 пар
+                        восстановился нужный выбор; остальные 10 требуют анализа даты обхода и сигналов. Рост кликов в
+                        равных периодах — наблюдаемый результат, но не изолированное доказательство причины.</p>
+                </details>
+            </article>
+            <details class="reading-outcome">
+                <summary>Итог всей остановки</summary>
+                <h3>Дело: промокопии стали основными</h3>
+                <h4>Что мы установили</h4>
+                <p>Новый раздел повторял категории без самостоятельной задачи. Canonical, меню и sitemap рекомендовали
+                    разные версии; у 74 пар Google выбрал промокопию. Падение общей группы включало оба вида URL,
+                    поэтому это не только перенос кликов между строками отчёта.</p>
+                <h4>Что исправили</h4>
+                <p>Ненужные копии направили постоянными редиректами на эквивалентные категории. Обновили ссылки и
+                    sitemap, проверили self-canonical категорий. Контрольный обход подтвердил правильные ответы всех 120
+                    пар. Переписывание нескольких абзацев само по себе не решило бы проблему структуры.</p>
+                <h4>Чем закончилась учебная история</h4>
+                <p>Через 28 дней Google выбирал основные категории у 110 пар. Для оставшихся 10 повторно проверили
+                    доступность и сигналы: новых конфликтов не нашли, а данные GSC ещё относились к обработке до
+                    редиректов. Продолжили наблюдение за повторным обходом. В следующем контрольном срезе через 56 дней
+                    основной адрес выбран у всех 120 пар; клики всей группы за последние 28 дней — 4 900 против исходных
+                    5 000.</p>
+                <h4>Что это значит для практики</h4>
+                <p>Техническая задача закрыта после подтверждения обработки всех пар. Клики приблизились к исходному
+                    уровню, но это не доказывает, что каждое изменение вызвано только редиректами. Все сроки и цифры
+                    придуманы. В рабочем отчёте отдельно фиксируют внедрение, обработку поиском и результат бизнеса. Обе
+                    специализации теперь доступны.</p>
+            </details>
+            <p class="source">Кейс и его результаты вымышлены. Источники: <a
+                    href="https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls"
+                    target="_blank" rel="noopener noreferrer">Google: выбор канонического URL</a> · <a
+                    href="https://developers.google.com/search/docs/crawling-indexing/canonicalization" target="_blank"
+                    rel="noopener noreferrer">Google: как выбирается канонический URL</a> · <a
+                    href="https://support.google.com/webmasters/answer/9012289?hl=en" target="_blank"
+                    rel="noopener noreferrer">Google: проверка URL</a> · <a
+                    href="https://developers.google.com/search/docs/monitor-debug/debugging-search-traffic-drops"
+                    target="_blank" rel="noopener noreferrer">Google: диагностика падения трафика</a></p><a
+                class="winbtn" href="#world">Вернуться к карте</a>
+        </div>
+    </section>
+    <section class="reading-mission" id="reading-c1" tabindex="-1" aria-labelledby="reading-title-c1">
+        <div class="dialoghead"><span>Остановка К1 · Режим чтения</span><a class="winbtn" href="#world">К карте ↗</a>
+        </div>
+        <div class="reading-body">
+            <h2 id="reading-title-c1">Магазин: две страницы, один запрос</h2>
+            <p class="curator"><b>Максимус</b>Две страницы по одному запросу. Ножницы пока положи. Сначала выясним,
+                действительно ли одна лишняя.</p>
+            <article class="reading-step">
+                <p class="missiontag">Этап 1 из 2</p>
+                <h3>Категория и статья конкурируют?</h3>
+                <div class="story">
+                    <p>У магазина есть категория «Кофемашины» и статья «Как выбрать кофемашину». Иногда обе появляются
+                        по запросу «кофемашины для дома». Руководитель предлагает удалить статью.</p>
+                </div>
+                <p class="questiontitle">Что проверить перед решением?</p>
+                <ol class="reading-options" type="A">
+                    <li>Сравнить общий объём текста и оставить более полный материал</li>
+                    <li>Сравнить задачи, группы запросов, посадочные и результаты обеих страниц</li>
+                    <li>Сравнить суммарные клики страниц без разделения запросов</li>
+                    <li>Сравнить число внешних ссылок и сделать их главным критерием объединения</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>Сравни задачи пользователей, которые решают категория и статья.</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Сравнить задачи, группы запросов, посадочные и результаты обеих страниц
+                    </div>
+                    <p>Пересечение ещё не означает, что одна страница лишняя. Сначала нужно понять, какую роль выполняет
+                        каждая и есть ли измеримая проблема.</p>
+                </details>
+            </article>
+            <article class="reading-step">
+                <p class="missiontag">Этап 2 из 2</p>
+                <h3>Две страницы — разные полезные действия</h3>
+                <div class="story">
+                    <p>За 8 недель категория получает клики по выбору товаров и покупки. Статья получает переходы по
+                        сравнению типов кофемашин; читатели переходят из неё в категорию. По одному общему запросу
+                        посадочная иногда меняется, но падения суммарных кликов и покупок не видно.</p>
+                </div>
+                <p class="questiontitle">Какое действие лучше соответствует найденной ситуации?</p>
+                <ol class="reading-options" type="A">
+                    <li>Перенести статью в описание категории и перенаправить старый URL для консолидации</li>
+                    <li>Уточнить роли страниц и переход из статьи в каталог, затем наблюдать пересекающийся срез</li>
+                    <li>Переписать статью под коммерческие запросы категории, чтобы обе страницы увеличивали продажи
+                    </li>
+                    <li>Убрать ссылки между страницами, чтобы поиск реже обнаруживал их тематическое пересечение</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>Какое изменение решает наблюдаемую проблему, не уничтожая работающую роль страницы?</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Уточнить роли страниц и переход из статьи в каталог, затем наблюдать
+                        пересекающийся срез</div>
+                    <p>У страниц есть разные задачи и полезный путь между ними, а измеримой потери в пересечении не
+                        найдено. Объединение пока лишено основания. Усиление одинаковой задачи может увеличить
+                        конкуренцию; удаление полезных ссылок ухудшит маршрут читателя.</p>
+                </details>
+            </article>
+            <details class="reading-outcome">
+                <summary>Итог всей остановки</summary>
+                <h3>Пересечение запросов ещё не диагноз</h3>
+                <h4>Что называют каннибализацией</h4>
+                <p>Так описывают ситуацию, когда страницы мешают друг другу получать нужный поисковый результат. Сам
+                    факт показов двух URL по одному запросу не доказывает проблему. Категория и статья могут помогать
+                    людям на разных этапах выбора.</p>
+                <h4>Как проверить подозрение</h4>
+                <p>Сопоставь задачи страниц, группы запросов, смену посадочной во времени и суммарный результат.
+                    Проверь, не теряются ли клики и полезные действия и не показывается ли явно неподходящий URL.
+                    Средние показатели целой страницы могут скрывать узкий проблемный сегмент.</p>
+                <h4>Когда объединять</h4>
+                <p>Объединение уместно обсуждать, когда материалы действительно дублируют одну задачу и отдельная
+                    страница не даёт пользы. Для разных задач обычно разумнее уточнить содержание и навигацию. Canonical
+                    не заменяет решение о структуре самостоятельных материалов.</p>
+                <h4>Результат этого кейса</h4>
+                <p>Сохранили категорию для товаров и статью для сравнения, сделали логичный переход между ними и
+                    выделили пересекающийся запрос для наблюдения. В отчёте зафиксировали отсутствие доказанной потери,
+                    а не объявили любое пересечение вредным.</p>
+            </details>
+            <p class="source">Кейс и его результаты вымышлены. Источники: <a
+                    href="https://ahrefs.com/blog/search-intent/" target="_blank" rel="noopener noreferrer">Ahrefs:
+                    поисковый интент</a> · <a
+                    href="https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls"
+                    target="_blank" rel="noopener noreferrer">Google: выбор канонического URL</a></p><a class="winbtn"
+                href="#world">Вернуться к карте</a>
+        </div>
+    </section>
+    <section class="reading-mission" id="reading-c2" tabindex="-1" aria-labelledby="reading-title-c2">
+        <div class="dialoghead"><span>Остановка К2 · Режим чтения</span><a class="winbtn" href="#world">К карте ↗</a>
+        </div>
+        <div class="reading-body">
+            <h2 id="reading-title-c2">Магазин переезжает на новые адреса</h2>
+            <p class="curator"><b>Максимус</b>Переезд сайта. Коробки не нужны, таблица адресов — нужна. Как всегда,
+                самое скучное оказывается полезным.</p>
+            <article class="reading-step">
+                <p class="missiontag">Этап 1 из 2</p>
+                <h3>Карта переезда до релиза</h3>
+                <div class="story">
+                    <p>Категории /catalog/chess/ и /catalog/checkers/ навсегда переезжают в /games/chess/ и
+                        /games/checkers/. Назначение и ассортимент каждой сохраняются. Новые URL готовы к публикации.
+                    </p>
+                </div>
+                <p class="questiontitle">Какой план перенаправлений выбрать?</p>
+                <ol class="reading-options" type="A">
+                    <li>301 со старых категорий на /games/, затем ссылки на подразделы на новой странице</li>
+                    <li>302 с каждой старой категории на соответствующую новую без обновления внутренних ссылок</li>
+                    <li>301 с каждой старой категории прямо на соответствующую новую с обновлением ссылок</li>
+                    <li>Ответ 200 на старых категориях и canonical на новые, сохранив обе версии в sitemap</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p class="maximus-grumble">При переезде принято сначала думать. Знаю, неудобная традиция.</p>
+                    <details>
+                        <summary>Ладно, подскажи</summary>
+                        <p>Сохрани задачу посетителя и постоянный характер изменения адреса.</p>
+                    </details>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> 301 с каждой старой категории прямо на соответствующую новую с
+                        обновлением ссылок</div>
+                    <p>Для постоянного переезда нужен соответствующий новый адрес и постоянное перенаправление без
+                        лишнего шага. Общий раздел хуже сохраняет конкретную задачу. Canonical оставляет старые
+                        документы доступными, а временный сценарий не соответствует плану постоянного переезда.</p>
+                </details>
+            </article>
+            <article class="reading-step">
+                <p class="missiontag">Этап 2 из 2</p>
+                <h3>Проверка нашла цепочку</h3>
+                <div class="story">
+                    <p>После релиза /catalog/chess/ отвечает 301 на /games/chess/, а тот — 301 на /board-games/chess/.
+                        Конечная категория отвечает 200 и соответствует старой. Именно /board-games/chess/ теперь
+                        окончательный адрес. В меню и sitemap всё ещё /games/chess/.</p>
+                </div>
+                <p class="questiontitle">Какое ТЗ завершает переезд?</p>
+                <ol class="reading-options" type="A">
+                    <li>Заменить первый 301 на 302, оставив цепочку и прежние адреса в меню</li>
+                    <li>Направить оба старых URL сразу на конечный, обновить меню, sitemap и canonical конечной страницы
+                    </li>
+                    <li>Вернуть /games/chess/ ответ 200 и скопировать туда конечную категорию для сокращения цепочки
+                    </li>
+                    <li>Обновить только sitemap на конечный URL, сохранив редиректы и меню в текущем виде</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>Какой URL должен остаться точкой назначения и для людей, и во внутренних указателях сайта?</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Направить оба старых URL сразу на конечный, обновить меню, sitemap и
+                        canonical конечной страницы</div>
+                    <p>Конечный адрес определён. Все устаревшие входы можно направить прямо на него, а внутренние ссылки
+                        обновить. Это убирает лишние переходы и противоречивые сигналы. Создание ещё одной копии ради
+                        ответа 200 вернуло бы проблему нескольких версий.</p>
+                </details>
+            </article>
+            <details class="reading-outcome">
+                <summary>Итог всей остановки</summary>
+                <h3>Переезд — это сохранение связей</h3>
+                <h4>До изменения адресов</h4>
+                <p>Подготовь соответствие старых и новых URL. Сопоставляй содержание и задачу страницы, а не только
+                    похожее написание адреса. Проверь новые страницы, их доступность и возможность индексации ещё до
+                    переключения.</p>
+                <h4>Во время релиза</h4>
+                <p>Настрой постоянные перенаправления прямо на эквивалентные новые страницы. Обнови внутренние ссылки,
+                    canonical и sitemap. Массовое направление на главную не сохраняет конкретную задачу старой
+                    категории.</p>
+                <h4>После релиза</h4>
+                <p>Обойди старые адреса: проверь назначения, цепочки и ошибки. Затем проверь новые URL и сигналы выбора
+                    основной версии. В GSC отслеживай обработку новых адресов; в отчётах учитывай старые и новые URL
+                    одной группы, чтобы перенос данных не выглядел потерей.</p>
+                <h4>Когда задача закончена</h4>
+                <p>Ответ 301 сам по себе ещё не означает завершённую миграцию. В кейсе устранена цепочка, все входы
+                    ведут на конечную категорию, ссылки обновлены. Дальше остаётся контроль обработки поиском и
+                    посещаемости. Возможные колебания не повод сразу менять план без диагностики.</p>
+            </details>
+            <p class="source">Кейс и его результаты вымышлены. Источники: <a
+                    href="https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes"
+                    target="_blank" rel="noopener noreferrer">Google: перенос сайта и смена URL</a></p><a class="winbtn"
+                href="#world">Вернуться к карте</a>
+        </div>
+    </section>
+    <section class="reading-mission" id="reading-c3" tabindex="-1" aria-labelledby="reading-title-c3">
+        <div class="dialoghead"><span>Остановка К3 · Режим чтения</span><a class="winbtn" href="#world">К карте ↗</a>
+        </div>
+        <div class="reading-body">
+            <h2 id="reading-title-c3">Спрос или потеря видимости?</h2>
+            <p class="curator"><b>Максимус</b>Зимой бывает меньше спроса. А бывает ошибка на сайте. Удобно было бы
+                выбрать одно, но придётся проверить оба.</p>
+            <article class="reading-step">
+                <p class="missiontag">Этап 1 из 3</p>
+                <h3>Какое сравнение поможет проверить спрос?</h3>
+                <div class="story">
+                    <p>В ноябре магазин садовых товаров получил на 35% меньше кликов по группе «садовые бассейны», чем в
+                        октябре. Пока известно только итоговое число. В прошлом году ассортимент был почти таким же.</p>
+                </div>
+                <p class="questiontitle">Как расширить проверку, чтобы отличить сезонный спад от потери видимости?</p>
+                <ol class="reading-options" type="A">
+                    <li>Сравнить последние семь дней с предыдущими семью и ориентироваться на процент падения</li>
+                    <li>Сопоставить несколько лет по сезону, спрос и позиции фиксированной группы, проверив URL</li>
+                    <li>Сравнить ноябрьский CTR с октябрьским и считать стабильность доказательством сезонности</li>
+                    <li>Сравнить трафик бассейнов с общим трафиком магазина без выделения других категорий</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p class="maximus-grumble">Может, сначала своя гипотеза? Я свою ещё даже не успел осудить.</p>
+                    <details>
+                        <summary>Ладно, подскажи</summary>
+                        <p>Какие данные характеризуют спрос рынка, а какие — присутствие именно этого сайта?</p>
+                    </details>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Сопоставить несколько лет по сезону, спрос и позиции фиксированной
+                        группы, проверив URL</div>
+                    <p>Нужны несколько независимых разрезов: повторяемость сезона, динамика спроса, видимость по
+                        стабильной группе и техническое состояние. Одна пара недель или стабильный CTR не отделяют все
+                        возможные причины.</p>
+                </details>
+            </article>
+            <article class="reading-step">
+                <p class="missiontag">Этап 2 из 3</p>
+                <h3>Сезонность есть, но не везде одинаково</h3>
+                <div class="story">
+                    <p>Проверка не нашла ошибок доступности. Рынок бассейнов снизился примерно на 30% по внешнему
+                        индикатору интереса. В таблице группы за сопоставимые периоды. Внешний индекс не является точным
+                        числом поисков.</p>
+                </div>
+                <div class="brief">
+                    <div class="brieftitle">Группы запросов</div>
+                    <div class="briefbody">
+                        <table>
+                            <tr class="tableheader">
+                                <th>Группа</th>
+                                <th>Клики</th>
+                                <th>Позиции фиксированного набора</th>
+                            </tr>
+                            <tr>
+                                <td data-label="Группа">Каркасные бассейны</td>
+                                <td data-label="Клики">−32%</td>
+                                <td data-label="Позиции фиксированного набора">5–7 → 5–7</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Группа">Детские надувные</td>
+                                <td data-label="Клики">−58%</td>
+                                <td data-label="Позиции фиксированного набора">5–7 → 10–14</td>
+                            </tr>
+                        </table>
+                        <p>Измерения относятся к одному региону и устройству.</p>
+                    </div>
+                </div>
+                <p class="questiontitle">Где нужна дополнительная диагностика сайта?</p>
+                <ol class="reading-options" type="A">
+                    <li>У обеих групп одинаково: все отклонения от 30% означают техническую ошибку</li>
+                    <li>Только у каркасных: совпадение со спросом может скрывать падение позиций</li>
+                    <li>У детских надувных: потеря больше рыночного сигнала и одновременно ухудшились позиции</li>
+                    <li>Ни у одной: подтверждённый спад рынка объясняет весь результат категории</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>В какой строке вместе с кликами изменился показатель собственной видимости?</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> У детских надувных: потеря больше рыночного сигнала и одновременно
+                        ухудшились позиции</div>
+                    <p>Каркасные согласуются с сезонной гипотезой. У детских надувных одновременно изменились позиции
+                        фиксированного набора запросов, поэтому сезонность не закрывает расследование. Сравнивают также
+                        конкурентов, посадочные и изменения выдачи; точное вычитание 30% из потерь не измерит причину.
+                    </p>
+                </details>
+            </article>
+            <article class="reading-step">
+                <p class="missiontag">Этап 3 из 3</p>
+                <h3>План с двумя направлениями</h3>
+                <div class="story">
+                    <p>Для каркасных бассейнов сезонная гипотеза остаётся ведущей. У детских надувных проверка выявила,
+                        что после изменения фильтра часть нужных моделей не видна на посадочной; конкуренты по тем же
+                        запросам показывают полный выбор. Пик спроса по прошлым годам начинается в апреле.</p>
+                </div>
+                <p class="questiontitle">Какой план отвечает обоим наблюдениям?</p>
+                <ol class="reading-options" type="A">
+                    <li>Отложить работу со всеми бассейнами до апреля, когда спрос сам начнёт расти</li>
+                    <li>Вернуть ассортимент детской посадочной и проверить её результат; каркасные подготовить до роста
+                        сезона</li>
+                    <li>Изменить названия обеих категорий под зимние товары, сохранив текущие URL</li>
+                    <li>Переписать все тексты про бассейны сейчас и оценить успех по возврату октябрьских кликов</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>Отдели исправление конкретного недостатка от подготовки к будущему пику.</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Вернуть ассортимент детской посадочной и проверить её результат;
+                        каркасные подготовить до роста сезона</div>
+                    <p>Есть две разные задачи: исправить найденное несоответствие детской посадочной и заранее
+                        подготовить сезонный ассортимент. Требовать в ноябре октябрьских кликов без учёта спроса
+                        некорректно. Исправление ассортимента тоже требует последующего контроля, а не обещания
+                        восстановления.</p>
+                </details>
+            </article>
+            <details class="reading-outcome">
+                <summary>Итог всей остановки</summary>
+                <h3>Спрос и видимость могут меняться одновременно</h3>
+                <h4>Что такое сезонность</h4>
+                <p>Повторяющиеся изменения интереса связаны с погодой, календарём, праздниками и привычками покупателей.
+                    Снижение кликов в низкий сезон не обязательно означает плохую работу SEO. Но сезонный товар не
+                    защищён от технических ошибок и проигрыша конкурентам.</p>
+                <h4>Как проверять</h4>
+                <p>Сравнивай несколько лет и сопоставимые периоды, учитывай подвижные праздники и изменения
+                    ассортимента. Внешний индекс интереса показывает относительную динамику, а не точное количество
+                    потерянных запросов. Дополняй его собственными показами и позициями стабильных групп.</p>
+                <h4>Что показал кейс</h4>
+                <p>Каркасные бассейны двигались вместе со спросом. У детских надувных ухудшилась видимость, и проверка
+                    обнаружила недостаток ассортимента на посадочной. Объяснять обе группы одним средним процентом было
+                    бы ошибкой.</p>
+                <h4>Практический результат</h4>
+                <p>Для детской категории восстановили подбор моделей и назначили контроль запросов и полезных действий.
+                    Для каркасной — подготовку до апрельского роста, а не удаление страницы зимой. План оценивается по
+                    выполненным исправлениям и сезонно сопоставимым результатам.</p>
+            </details>
+            <p class="source">Кейс и его результаты вымышлены. Источники: <a
+                    href="https://developers.google.com/search/docs/monitor-debug/debugging-search-traffic-drops"
+                    target="_blank" rel="noopener noreferrer">Google: диагностика падения трафика</a> · <a
+                    href="https://support.google.com/webmasters/answer/7576553?hl=en" target="_blank"
+                    rel="noopener noreferrer">Google: отчёт об эффективности GSC</a></p><a class="winbtn"
+                href="#world">Вернуться к карте</a>
+        </div>
+    </section>
+    <section class="reading-mission" id="reading-i1" tabindex="-1" aria-labelledby="reading-title-i1">
+        <div class="dialoghead"><span>Остановка И1 · Режим чтения</span><a class="winbtn" href="#world">К карте ↗</a>
+        </div>
+        <div class="reading-body">
+            <h2 id="reading-title-i1">iGaming: у бренда много задач</h2>
+            <p class="curator"><b>Максимус</b>Один бренд, разные рынки и условия. Копировать текст быстрее. Разбираться
+                потом — дольше.</p>
+            <article class="reading-step">
+                <p class="missiontag">Этап 1 из 2</p>
+                <h3>Бренд один, рынки разные</h3>
+                <div class="story">
+                    <p>Независимый сайт об OrbitPlay готовит английскую страницу для двух учебных рынков A и B. Бренд
+                        один, но в проверенных условиях отличаются доступность мобильного продукта, способы оплаты и
+                        правила предложения. Реальные страны здесь не моделируются.</p>
+                </div>
+                <p class="questiontitle">Что нужно заложить в подготовку материала?</p>
+                <ol class="reading-options" type="A">
+                    <li>Одно описание с условиями рынка A, поскольку язык у двух аудиторий одинаковый</li>
+                    <li>Таблицу условий по рынкам и правило выбора нужной версии, с источниками для каждого факта</li>
+                    <li>Два перевода одного текста на английский с разными названиями рынков в H1</li>
+                    <li>Один список самых выгодных условий из обоих рынков без разделения аудитории</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>Может ли читатель каждого рынка воспользоваться именно тем, что обещает текст?</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Таблицу условий по рынкам и правило выбора нужной версии, с источниками
+                        для каждого факта</div>
+                    <p>Язык не равен рынку. Пользователь должен понимать, какие сведения относятся к его ситуации.
+                        Проверяемые различия в продукте оправдывают отдельное содержание или явное разделение; простая
+                        замена названия места не даёт такой пользы.</p>
+                </details>
+            </article>
+            <article class="reading-step">
+                <p class="missiontag">Этап 2 из 2</p>
+                <h3>Login: делать ли отдельный материал?</h3>
+                <div class="story">
+                    <p>В выдаче по «OrbitPlay login» доминирует вход оператора. Сайт у тебя независимый. Обращения
+                        читателей показывают отдельную потребность: они не получают письмо восстановления пароля. У
+                        оператора есть проверенная инструкция, а у тебя уже есть общий обзор бренда.</p>
+                </div>
+                <p class="questiontitle">Какой материал имеет самостоятельную задачу?</p>
+                <ol class="reading-options" type="A">
+                    <li>Ещё один обзор бренда с заголовком Login и той же таблицей общих преимуществ</li>
+                    <li>Страница со ссылкой на оператора и кратким повтором раздела бонусов из обзора</li>
+                    <li>Инструкция по проблеме восстановления со ссылками на поддержку, источником и ясной ролью сайта
+                    </li>
+                    <li>Отдельные страницы «login», «sign in» и «account» с одинаковым текстом про доступ</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>Какой вариант отвечает подтверждённому обращению читателя, а не просто повторяет ключ?</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Инструкция по проблеме восстановления со ссылками на поддержку,
+                        источником и ясной ролью сайта</div>
+                    <p>Основание для страницы — выявленная проблема, которую она помогает решить. Инструкция по
+                        восстановлению дополняет официальный сервис, не выдавая сторонний сайт за него. Название Login и
+                        близкие ключи сами по себе не создают новой пользы или права собирать учётные данные.</p>
+                </details>
+            </article>
+            <details class="reading-outcome">
+                <summary>Итог всей остановки</summary>
+                <h3>Нишевая страница начинается с реального продукта</h3>
+                <h4>Одна марка не означает одни условия</h4>
+                <p>У бренда могут различаться продукты и условия для разных аудиторий. Перед написанием зафиксируй
+                    рынок, язык и проверяемый источник. Обещания из одного набора условий нельзя автоматически
+                    переносить в другой.</p>
+                <h4>Отстройка задач</h4>
+                <p>Обзор помогает оценить продукт; материал об условиях объясняет ограничения; инструкция решает
+                    конкретную техническую проблему пользователя. Разделение оправдано содержанием. Набор похожих
+                    брендовых ключей сам по себе не требует отдельной страницы под каждую форму.</p>
+                <h4>Навигация и роль сайта</h4>
+                <p>Сторонний ресурс может объяснить восстановление доступа и направить к официальной поддержке. Он
+                    должен ясно обозначать свою независимость. Не подменяй задачу входа обещанием бонуса и не создавай
+                    впечатление, что читатель находится в аккаунте оператора.</p>
+                <h4>Что получилось</h4>
+                <p>Подготовили структуру проверки условий по рынкам и выбрали отдельную инструкцию по подтверждённой
+                    проблеме. Эти навыки применимы и к другим отраслям: содержание должно соответствовать продукту и
+                    роли издателя. iGaming — ниша, а не автоматически «чёрный» способ SEO.</p>
+            </details>
+            <p class="source">Кейс и его результаты вымышлены. Источники: <a
+                    href="https://ahrefs.com/blog/search-intent/" target="_blank" rel="noopener noreferrer">Ahrefs:
+                    поисковый интент</a> · <a href="https://developers.google.com/search/docs/essentials/spam-policies"
+                    target="_blank" rel="noopener noreferrer">Google: правила в отношении спама</a></p><a class="winbtn"
+                href="#world">Вернуться к карте</a>
+        </div>
+    </section>
+    <section class="reading-mission" id="reading-i2" tabindex="-1" aria-labelledby="reading-title-i2">
+        <div class="dialoghead"><span>Остановка И2 · Режим чтения</span><a class="winbtn" href="#world">К карте ↗</a>
+        </div>
+        <div class="reading-body">
+            <h2 id="reading-title-i2">iGaming: предложение устарело</h2>
+            <p class="curator"><b>Максимус</b>Поставить свежую дату — дело секунды. Проверить, что под ней написано,
+                почему-то отдельный подвиг.</p>
+            <article class="reading-step">
+                <p class="missiontag">Этап 1 из 2</p>
+                <h3>Что делать со старым бонусом?</h3>
+                <div class="story">
+                    <p>Учебная ситуация: независимая страница сообщает о предложении OrbitPlay. В официальных условиях
+                        указано, что оно закончилось 31 августа. На календаре в кейсе 3 сентября. Новое предложение ещё
+                        не подтверждено.</p>
+                </div>
+                <p class="questiontitle">Как отредактировать страницу?</p>
+                <ol class="reading-options" type="A">
+                    <li>Сохранить описание акции как действующее и добавить в конце ссылку на полные условия</li>
+                    <li>Явно отметить завершение, убрать текущие призывы и проверить, появилось ли новое предложение
+                    </li>
+                    <li>Убрать дату окончания, сохранив размер предложения до следующей проверки</li>
+                    <li>Перенаправить страницу на обзор бренда без проверки её самостоятельной информационной пользы
+                    </li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>Можно ли сейчас выполнить обещание страницы?</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Явно отметить завершение, убрать текущие призывы и проверить, появилось
+                        ли новое предложение</div>
+                    <p>Устаревшее обещание перестало соответствовать фактам кейса. Нужно обновить видимые условия и
+                        связанные элементы страницы. Новые условия нельзя придумывать.</p>
+                </details>
+            </article>
+            <article class="reading-step">
+                <p class="missiontag">Этап 2 из 2</p>
+                <h3>Где ещё осталась старая информация?</h3>
+                <div class="story">
+                    <p>Редактор исправил основной абзац. Но прежнее предложение всё ещё указано в Title, таблице, FAQ и
+                        на кнопке перехода. В шапке страницы стоит сегодняшняя дата обновления.</p>
+                </div>
+                <p class="questiontitle">Как завершить редакционную проверку?</p>
+                <ol class="reading-options" type="A">
+                    <li>Опубликовать абзац с новой датой и отдельно назначить проверку остальных элементов</li>
+                    <li>Согласовать текст, метаданные, таблицу, FAQ и кнопки, записав источник и дату проверки</li>
+                    <li>Скрыть таблицу условий и оставить прежние Title и FAQ до переобхода</li>
+                    <li>Изменить Title и дату, оставив таблицу как архив без пояснения для читателя</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>Прочитай страницу глазами посетителя: везде ли ему сообщают одно и то же?</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Согласовать текст, метаданные, таблицу, FAQ и кнопки, записав источник
+                        и дату проверки</div>
+                    <p>Дата обновления сама по себе не исправляет противоречия. В этом кейсе читатель всё ещё видит
+                        несколько устаревших обещаний, поэтому правки нужно завершить во всех связанных местах.</p>
+                </details>
+            </article>
+            <details class="reading-outcome">
+                <summary>Итог всей остановки</summary>
+                <h3>Актуальность — это согласованные факты</h3>
+                <h4>Почему обновление нужно</h4>
+                <p>Человек может увидеть предложение в заголовке, таблице или FAQ и не прочитать уточнение в другом
+                    месте. После завершения акции прежний призыв перестаёт соответствовать ситуации, даже если на
+                    странице появилась свежая дата.</p>
+                <h4>Что проверять</h4>
+                <p>Сверяй условия с первоисточником для нужного рынка. Фиксируй источник, дату содержательной проверки и
+                    ограничения предложения. Если новые условия не подтверждены, корректно сообщи об этом вместо
+                    предположения.</p>
+                <h4>Обновляй все связанные элементы</h4>
+                <p>После основного текста пройди по Title, description, таблицам, FAQ и кнопкам. Полезно искать прежние
+                    сумму, дату и формулировку по всей странице и связанным шаблонам. Архивные условия нужно явно
+                    обозначить как завершённые.</p>
+                <h4>Результат кейса</h4>
+                <p>Прежнее предложение отмечено как закончившееся, призывы получить его сейчас удалены, противоречия
+                    устранены. Для следующих проверок назначены ответственный и дата. Смена даты без проверки содержания
+                    не является редакционным обновлением.</p>
+            </details>
+            <p class="source">Кейс и его результаты вымышлены. Источники: <a
+                    href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" target="_blank"
+                    rel="noopener noreferrer">Google: основы SEO</a></p><a class="winbtn" href="#world">Вернуться к
+                карте</a>
+        </div>
+    </section>
+    <section class="reading-mission" id="reading-i3" tabindex="-1" aria-labelledby="reading-title-i3">
+        <div class="dialoghead"><span>Остановка И3 · Режим чтения</span><a class="winbtn" href="#world">К карте ↗</a>
+        </div>
+        <div class="reading-body">
+            <h2 id="reading-title-i3">iGaming: 24 страницы без различий</h2>
+            <p class="curator"><b>Максимус</b>Двадцать четыре страницы. Осталось выяснить, есть ли там двадцать четыре
+                причины существовать.</p>
+            <article class="reading-step">
+                <p class="missiontag">Этап 1 из 3</p>
+                <h3>Проверяем назначение 24 страниц</h3>
+                <div class="story">
+                    <p>На независимом сайте создали 24 страницы OrbitPlay для городов одного учебного рынка.
+                        Предложение, доступность и способы оплаты одинаковы; меняется название города. Все страницы
+                        ведут к одному оператору. Команда хочет решить, нужна ли такая структура.</p>
+                </div>
+                <p class="questiontitle">Какую проверку провести прежде всего?</p>
+                <ol class="reading-options" type="A">
+                    <li>Сопоставить длину текстов и оставить геостраницы, у которых больше уникальных предложений</li>
+                    <li>Найти реальные различия задач и условий по городам и проверить, что отдельные страницы их решают
+                    </li>
+                    <li>Сравнить позиции городских ключей и сохранить все страницы, которые хотя бы раз показывались
+                    </li>
+                    <li>Проверить число упоминаний города в заголовках и выровнять его на всех страницах</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p class="maximus-grumble">Двадцать четыре страницы и одна кнопка помощи. Угадай, что сейчас
+                        работает активнее.</p>
+                    <details>
+                        <summary>Ладно, подскажи</summary>
+                        <p>Что получит житель конкретного города, чего не даёт общая страница?</p>
+                    </details>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Найти реальные различия задач и условий по городам и проверить, что
+                        отдельные страницы их решают</div>
+                    <p>Нужно выяснить, существует ли самостоятельная локальная задача и полезное содержание. Отличие
+                        формулировок, единичные показы и плотность ключей этого не доказывают. Множество близких страниц
+                        для сходных запросов с переводом в одно место — повод проверить doorway-подход.</p>
+                </details>
+            </article>
+            <article class="reading-step">
+                <p class="missiontag">Этап 2 из 3</p>
+                <h3>Что делать с найденными группами?</h3>
+                <div class="story">
+                    <p>Аудит подтвердил: 20 городских страниц повторяют общий обзор. Ещё 4 URL фактически содержат
+                        разные полезные инструкции по оплате; их географические названия не соответствуют содержанию.
+                        Общий обзор уже покрывает сведения первых 20 страниц.</p>
+                </div>
+                <p class="questiontitle">Какой план лучше сохраняет полезное содержание?</p>
+                <ol class="reading-options" type="A">
+                    <li>Перенаправить все 24 URL в общий обзор, сохранив инструкции только в выгрузке аудита</li>
+                    <li>Сохранить все URL и заменить названия городов синонимами условий оплаты</li>
+                    <li>Объединить 20 дублей с эквивалентным обзором, а 4 инструкции оформить по их реальным задачам
+                    </li>
+                    <li>Добавить общий canonical на обзор для всех 24 URL, оставив содержание и заголовки прежними</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>Раздели ненужные копии и страницы, которые действительно отвечают на разные вопросы.</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Объединить 20 дублей с эквивалентным обзором, а 4 инструкции оформить
+                        по их реальным задачам</div>
+                    <p>Для 20 дублей есть содержательно подходящий обзор. У четырёх инструкций самостоятельная польза:
+                        её сохраняют, исправляя названия и структуру. Если URL инструкций меняются, составляют отдельные
+                        соответствия и редиректы. Общий canonical не подходит всем разным материалам.</p>
+                </details>
+            </article>
+            <article class="reading-step">
+                <p class="missiontag">Этап 3 из 3</p>
+                <h3>По каким данным закрывать аудит?</h3>
+                <div class="story">
+                    <p>Редиректы и новая структура опубликованы. Количество индексируемых URL уменьшилось, как и
+                        планировалось. Руководитель видит меньше страниц и спрашивает, не стало ли хуже.</p>
+                </div>
+                <p class="questiontitle">Какой набор контроля отвечает цели изменений?</p>
+                <ol class="reading-options" type="A">
+                    <li>Количество URL в индексе и средний объём текста: они должны вернуться к прежним значениям</li>
+                    <li>Клики только сохранённого обзора без старых URL и без отдельных инструкций</li>
+                    <li>Ответы и назначения старых URL, выбранные основные версии и результат объединённых групп</li>
+                    <li>Общая средняя позиция сайта без проверки переходов и конкретных страниц</li>
+                </ol>
+                <details>
+                    <summary>Подсказка Максимуса</summary>
+                    <p>Как измерить сохранение полезных задач, а не сохранение прежнего количества страниц?</p>
+                </details>
+                <details class="reading-answer">
+                    <summary>Посмотреть ответ и разбор</summary>
+                    <div><strong>Ответ:</strong> Ответы и назначения старых URL, выбранные основные версии и результат
+                        объединённых групп</div>
+                    <p>Цель — убрать ненужное дублирование и сохранить задачи. Уменьшение числа страниц предусмотрено
+                        планом. Проверяют технические соответствия и результат всех связанных URL вместе: иначе перенос
+                        показателей между адресами искажает сравнение.</p>
+                </details>
+            </article>
+            <details class="reading-outcome">
+                <summary>Итог всей остановки</summary>
+                <h3>Структура должна объяснять, зачем нужна каждая страница</h3>
+                <h4>Что насторожило</h4>
+                <p>Городские URL повторяли одно содержание и вели к одному продукту без локальных различий. Это повод
+                    проверить, не создаются ли страницы преимущественно для охвата сходных запросов. Само число URL или
+                    упоминание города ещё не является достаточным диагнозом.</p>
+                <h4>Как принять решение</h4>
+                <p>Сопоставь реальную пользу, условия, запросы и содержание. В кейсе 20 страниц оказались дублями
+                    обзора, а 4 — полезными инструкциями под неверными названиями. Решение для каждой группы разное:
+                    объединение дублей и сохранение самостоятельных задач.</p>
+                <h4>Что входит во внедрение</h4>
+                <p>Подбери содержательно подходящие назначения перенаправлений, обнови внутренние ссылки и sitemap. У
+                    инструкций приведи в соответствие заголовки и фактическую задачу. Canonical не служит способом
+                    объединить любые разные документы.</p>
+                <h4>Завершение специализации</h4>
+                <p>Проверили старые и новые адреса, зафиксировали основные версии и назначили наблюдение за кликами и
+                    полезными действиями всей группы. Рост заранее не обещается. После обеих веток у тебя есть общий
+                    порядок работы: вопрос → данные → гипотеза → изменение → проверка результата.</p>
+            </details>
+            <p class="source">Кейс и его результаты вымышлены. Источники: <a
+                    href="https://developers.google.com/search/docs/essentials/spam-policies" target="_blank"
+                    rel="noopener noreferrer">Google: правила в отношении спама</a> · <a
+                    href="https://ahrefs.com/blog/search-intent/" target="_blank" rel="noopener noreferrer">Ahrefs:
+                    поисковый интент</a></p><a class="winbtn" href="#world">Вернуться к карте</a>
+        </div>
+    </section>
+    <!-- READING END -->
+        <script src="js/course-data.js"></script>
+    <script src="js/game-engine.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+{
+  "basics": {
+    "name": "Google: основы SEO",
+    "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+  },
+  "intent": {
+    "name": "Ahrefs: поисковый интент",
+    "url": "https://ahrefs.com/blog/search-intent/"
+  },
+  "gsc": {
+    "name": "Google: отчёт об эффективности GSC",
+    "url": "https://support.google.com/webmasters/answer/7576553?hl=en"
+  },
+  "dr": {
+    "name": "Ahrefs: Domain Rating",
+    "url": "https://help.ahrefs.com/en/articles/1409408-what-is-domain-rating-dr"
+  },
+  "gap": {
+    "name": "Semrush: Keyword Gap",
+    "url": "https://www.semrush.com/kb/28-keyword-gap"
+  },
+  "ga4": {
+    "name": "Google: привлечение трафика в GA4",
+    "url": "https://support.google.com/analytics/answer/12923437?hl=en"
+  },
+  "robots": {
+    "name": "Google: robots.txt",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro"
+  },
+  "canonical": {
+    "name": "Google: выбор канонического URL",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls"
+  },
+  "drops": {
+    "name": "Google: диагностика падения трафика",
+    "url": "https://developers.google.com/search/docs/monitor-debug/debugging-search-traffic-drops"
+  },
+  "move": {
+    "name": "Google: перенос сайта и смена URL",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes"
+  },
+  "spam": {
+    "name": "Google: правила в отношении спама",
+    "url": "https://developers.google.com/search/docs/essentials/spam-policies"
+  },
+  "titles": {
+    "name": "Google: заголовки результатов поиска",
+    "url": "https://developers.google.com/search/docs/appearance/title-link"
+  },
+  "snippets": {
+    "name": "Google: описания и сниппеты",
+    "url": "https://developers.google.com/search/docs/appearance/snippet"
+  },
+  "keywords": {
+    "name": "Ahrefs: исследование ключевых запросов",
+    "url": "https://ahrefs.com/seo/keyword-research"
+  },
+  "inspection": {
+    "name": "Google: проверка URL",
+    "url": "https://support.google.com/webmasters/answer/9012289?hl=en"
+  },
+  "canonconcept": {
+    "name": "Google: как выбирается канонический URL",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/canonicalization"
+  },
+  "noindex": {
+    "name": "Google: инструкция noindex",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/block-indexing"
+  }
+}

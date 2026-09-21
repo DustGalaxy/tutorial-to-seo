@@ -1,0 +1,1110 @@
+/* Mobile Adaptation & Touch Optimization */
+/* Mobile adaptation. The landscape map and desktop layout remain available. */
+        html {
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+            scrollbar-gutter: stable
+        }
+
+        button,
+        a,
+        input,
+        select,
+        summary {
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: transparent
+        }
+
+        .computer,
+        .sheet,
+        .missionlayout,
+        .dialogcontent,
+        .gamebody,
+        .guidepanel {
+            min-width: 0
+        }
+
+        .missiondock:empty {
+            display: none
+        }
+
+        .missiondock .actions,
+        .missiondock .endchoices {
+            margin: 0
+        }
+
+        .dialoghead>span {
+            min-width: 0;
+            overflow-wrap: anywhere
+        }
+
+        .closebtn {
+            flex-shrink: 0
+        }
+
+        .mapnode,
+        .winbtn,
+        .primary,
+        .playbutton {
+            scroll-margin-top: 100px
+        }
+
+        @media(max-width:790px), (max-width:1024px) and (pointer:coarse) {
+            html {
+                scrollbar-gutter: auto
+            }
+
+            body {
+                padding: max(5px, env(safe-area-inset-top)) max(5px, env(safe-area-inset-right)) max(5px, env(safe-area-inset-bottom)) max(5px, env(safe-area-inset-left));
+                overflow-x: hidden
+            }
+
+            .computer {
+                width: 100%;
+                max-width: none;
+                box-shadow: 2px 3px 0 #17475d;
+                padding: 3px
+            }
+
+            .titlebar {
+                padding: 8px;
+                font-size: 12px;
+                line-height: 1.4
+            }
+
+            .titlebar>span:nth-child(2) {
+                min-width: 0
+            }
+
+            .windowword,
+            .menubar .version {
+                display: none
+            }
+
+            .menubar {
+                display: grid;
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+                gap: 5px;
+                padding: 7px
+            }
+
+            .menubar .winbtn {
+                min-width: 0;
+                min-height: 46px;
+                padding: 6px 3px;
+                font-size: 12px;
+                line-height: 1.3;
+                white-space: normal
+            }
+
+            .brandline {
+                display: block;
+                padding: 10px 12px 12px
+            }
+
+            .gametitle {
+                font-size: 30px
+            }
+
+            .subtitle {
+                font-size: 14px;
+                line-height: 1.4;
+                margin-top: 5px
+            }
+
+            .scorebox {
+                margin: 10px 0 0;
+                min-width: 0;
+                padding: 7px 10px
+            }
+
+            .scoretext {
+                font-size: 14px;
+                gap: 8px;
+                flex-wrap: wrap
+            }
+
+            .scoretext strong {
+                font-size: 16px
+            }
+
+            .meter {
+                height: 11px;
+                margin-top: 6px
+            }
+
+            .gamebody {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                padding: 6px
+            }
+
+            .guidepanel {
+                order: 0;
+                display: block
+            }
+
+            .guidewindow {
+                display: grid;
+                grid-template-columns: 78px minmax(0, 1fr)
+            }
+
+            .minihead {
+                grid-column: 1/-1;
+                font-size: 14px;
+                padding: 6px 9px
+            }
+
+            .mascotstage {
+                height: 100%;
+                min-height: 100px;
+                max-height: 180px;
+                align-self: start
+            }
+
+            .mascotstage img {
+                height: 100px;
+                width: 78px;
+                object-fit: contain;
+                filter: none
+            }
+
+            .speech {
+                padding: 10px;
+                font-size: 14px;
+                line-height: 1.45;
+                border-left: 1px solid #bdb582;
+                border-top: 0
+            }
+
+            .speech p {
+                line-height: 1.45;
+                margin-bottom: 7px
+            }
+
+            .speech p:first-child {
+                margin-bottom: 5px
+            }
+
+            .playbutton {
+                min-height: 46px;
+                font-size: 15px;
+                margin-top: 9px;
+                line-height: 1.35;
+                padding: 9px
+            }
+
+            .notebook {
+                display: none
+            }
+
+            .mapframe {
+                order: 1;
+                width: 100%;
+                border-width: 2px
+            }
+
+            .maptoolbar {
+                position: sticky;
+                top: env(safe-area-inset-top, 0px);
+                z-index: 9;
+                display: grid;
+                grid-template-columns: minmax(0, 1fr) auto;
+                gap: 8px;
+                padding: 8px;
+                font-size: 12px;
+                line-height: 1.45;
+                box-shadow: 0 2px 0 #75835855
+            }
+
+            .maptoolbar span {
+                font-weight: 400
+            }
+
+            .maptoolbar .winbtn {
+                padding: 8px;
+                min-height: 44px;
+                font-size: 12px;
+                max-width: 130px;
+                white-space: normal;
+                line-height: 1.35
+            }
+
+            .mapviewport {
+                overflow: visible;
+                max-height: none;
+                width: 100%;
+                scroll-behavior: auto
+            }
+
+            .world {
+                min-width: 0;
+                width: 100%;
+                aspect-ratio: auto;
+                height: 2120px;
+                background-size: auto 100%;
+                background-position: 48% center;
+                overflow: hidden
+            }
+
+            .roads {
+                overflow: visible
+            }
+
+            .mapnode {
+                width: 64px;
+                height: 64px;
+                font-size: 23px;
+                border-width: 3px;
+                scroll-margin-top: 100px
+            }
+
+            .mapnode.current {
+                outline-width: 3px;
+                outline-offset: 4px
+            }
+
+            .mapnode.current:before {
+                font-size: 11px;
+                padding: 4px 7px;
+                bottom: calc(100% + 13px)
+            }
+
+            .nodelabel {
+                font-size: 14px;
+                line-height: 1.3;
+                white-space: normal;
+                overflow-wrap: anywhere;
+                width: var(--node-label-width, 126px);
+                max-width: none;
+                text-align: center;
+                top: calc(100% + 10px);
+                padding: 5px 6px;
+                pointer-events: auto
+            }
+
+            .region {
+                font-size: 14px;
+                line-height: 1.3;
+                white-space: normal;
+                text-align: center;
+                padding: 7px 8px
+            }
+
+            .region.basic {
+                left: 50%;
+                top: 22px;
+                transform: translateX(-50%);
+                width: 84%;
+                max-width: 310px
+            }
+
+            .region.classic,
+            .region.igaming {
+                transform: translateX(-50%);
+                width: var(--node-label-width, 126px)
+            }
+
+            .region.classic {
+                left: 26%;
+                top: 1570px
+            }
+
+            .region.igaming {
+                left: 74%;
+                top: 1570px
+            }
+
+            .statusbar {
+                padding: 6px;
+                font-size: 12px;
+                line-height: 1.4
+            }
+
+            .statusbar span:first-child {
+                width: 100%
+            }
+
+            .statusbar span:last-child {
+                display: none
+            }
+
+            .toast {
+                bottom: max(14px, env(safe-area-inset-bottom));
+                font-size: 14px;
+                line-height: 1.5;
+                padding: 11px 14px;
+                width: max-content;
+                max-width: calc(100vw - 30px)
+            }
+
+            dialog,
+            dialog.small {
+                position: fixed;
+                inset: auto;
+                top: var(--visual-top, 0px);
+                left: 0;
+                margin: 0;
+                width: 100%;
+                max-width: none;
+                height: var(--visual-height, 100dvh);
+                max-height: none;
+                border-width: 2px;
+                box-shadow: none;
+                overflow: hidden
+            }
+
+            dialog[open] {
+                display: flex;
+                flex-direction: column
+            }
+
+            .dialoghead {
+                position: relative;
+                z-index: 3;
+                flex: 0 0 auto;
+                min-height: 56px;
+                gap: 10px;
+                padding: 8px 9px;
+                padding-top: max(8px, env(safe-area-inset-top));
+                font-size: 14px;
+                line-height: 1.4
+            }
+
+            .closebtn {
+                min-width: 44px;
+                height: 44px;
+                font-size: 22px
+            }
+
+            dialog>.dialogcontent {
+                flex: 1 1 auto;
+                min-height: 0;
+                overflow-y: auto;
+                overflow-x: hidden;
+                overscroll-behavior-y: contain;
+                -webkit-overflow-scrolling: touch;
+                padding: 10px 10px max(14px, env(safe-area-inset-bottom))
+            }
+
+            .dialogcontent.sheet {
+                margin: 8px;
+                border-width: 1px;
+                padding: 14px;
+                box-shadow: none
+            }
+
+            .missionmeta {
+                font-size: 13px;
+                gap: 8px;
+                margin-bottom: 10px;
+                align-items: center
+            }
+
+            .missiontag {
+                font-size: 12px;
+                max-width: 100%;
+                white-space: normal;
+                line-height: 1.4;
+                padding: 5px 7px
+            }
+
+            .stepdots {
+                gap: 4px;
+                margin-left: auto
+            }
+
+            .stepdot {
+                width: 13px;
+                height: 9px
+            }
+
+            .missionlayout {
+                display: flex;
+                flex-direction: column;
+                gap: 10px
+            }
+
+            .missionaside {
+                display: flex;
+                gap: 8px;
+                align-items: center
+            }
+
+            .dialogmascot {
+                width: 58px;
+                height: 70px;
+                flex-shrink: 0;
+                filter: none
+            }
+
+            .curator {
+                font-size: 14px;
+                line-height: 1.45;
+                padding: 9px;
+                text-align: left
+            }
+
+            .curator b {
+                font-size: 14px;
+                margin: 0 0 3px
+            }
+
+            .sheet {
+                padding: 15px 13px;
+                border-width: 1px;
+                box-shadow: 1px 2px 0 #95a08d
+            }
+
+            .sheet h2 {
+                font-size: 24px;
+                line-height: 1.3;
+                margin-bottom: 13px;
+                overflow-wrap: anywhere
+            }
+
+            .story {
+                font-size: 16px;
+                line-height: 1.6;
+                margin-bottom: 16px
+            }
+
+            .story p {
+                line-height: 1.6
+            }
+
+            .questiontitle {
+                font-size: 17px;
+                line-height: 1.5;
+                margin: 17px 0 12px
+            }
+
+            .answerlist {
+                gap: 10px
+            }
+
+            .answer {
+                width: 100%;
+                font-size: 16px;
+                line-height: 1.5;
+                gap: 9px;
+                padding: 12px 10px;
+                min-height: 54px;
+                overflow-wrap: anywhere
+            }
+
+            .answer .letter {
+                min-width: 28px;
+                height: 28px;
+                font-size: 14px
+            }
+
+            .answer>span:last-child {
+                min-width: 0
+            }
+
+            .matchrow {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 8px;
+                padding: 12px 0;
+                font-size: 16px
+            }
+
+            .matchrow select {
+                font-size: 16px;
+                min-height: 50px;
+                max-width: 100%;
+                padding: 10px 7px
+            }
+
+            .numberinput {
+                font-size: 22px;
+                min-height: 52px;
+                width: 135px;
+                border-radius: 0
+            }
+
+            .hint {
+                font-size: 15px;
+                line-height: 1.55;
+                scroll-margin-top: 16px
+            }
+
+            .feedback {
+                font-size: 16px;
+                line-height: 1.55;
+                padding: 13px;
+                scroll-margin-top: 14px
+            }
+
+            .feedback strong {
+                font-size: 17px;
+                line-height: 1.4
+            }
+
+            .source {
+                font-size: 13px;
+                line-height: 1.6;
+                overflow-wrap: anywhere
+            }
+
+            .source a {
+                display: inline-block;
+                padding: 4px 0
+            }
+
+            .brief {
+                margin: 15px 0;
+                max-width: 100%
+            }
+
+            .brieftitle {
+                font-size: 13px;
+                line-height: 1.5;
+                overflow-wrap: anywhere
+            }
+
+            .briefbody {
+                font-size: 15px;
+                padding: 11px;
+                line-height: 1.55
+            }
+
+            .brief pre {
+                font-size: 14px;
+                line-height: 1.6;
+                overflow-wrap: anywhere
+            }
+
+            .brief table,
+            .brief tbody {
+                display: block;
+                width: 100%
+            }
+
+            .brief tr.tableheader {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                padding: 0;
+                overflow: hidden;
+                clip: rect(0, 0, 0, 0);
+                white-space: nowrap
+            }
+
+            .brief tr:not(.tableheader) {
+                display: block;
+                border: 1px solid #c0cbb4;
+                margin: 0 0 10px;
+                padding: 0;
+                background: #fffdf0
+            }
+
+            .brief tr:last-child {
+                margin-bottom: 0
+            }
+
+            .brief td {
+                display: grid;
+                grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+                gap: 10px;
+                align-items: start;
+                font-size: 15px;
+                line-height: 1.5;
+                padding: 9px 10px;
+                text-align: left;
+                overflow-wrap: anywhere;
+                border-bottom: 1px solid #dde3d4
+            }
+
+            .brief td::before {
+                content: attr(data-label);
+                font-size: 13px;
+                line-height: 1.6;
+                color: #465b62;
+                font-weight: 400
+            }
+
+            .brief td:first-child {
+                font-weight: 700;
+                background: #e9efdb
+            }
+
+            .brief td:last-child {
+                border-bottom: 0
+            }
+
+            .missiondock {
+                flex: 0 0 auto;
+                z-index: 4;
+                padding: 10px 10px max(10px, env(safe-area-inset-bottom));
+                background: #e0e2d4;
+                border-top: 2px solid #9ea68f;
+                box-shadow: 0 -4px 8px #263d4515
+            }
+
+            .missiondock .actions,
+            .missiondock .endchoices {
+                display: grid;
+                grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+                align-items: stretch;
+                gap: 9px;
+                margin: 0
+            }
+
+            .missiondock button {
+                width: 100%;
+                min-width: 0;
+                min-height: 50px;
+                white-space: normal;
+                font-size: 14px;
+                line-height: 1.35;
+                padding: 10px 8px
+            }
+
+            .missiondock .primary {
+                font-size: 15px
+            }
+
+            .missiondock .endchoices {
+                grid-template-columns: minmax(0, 1fr)
+            }
+
+            .missiondock .endchoices .winbtn {
+                min-height: 44px
+            }
+
+            .resultbody {
+                font-size: 16px;
+                line-height: 1.6
+            }
+
+            .resultstamp {
+                padding: 12px 10px
+            }
+
+            .resultstamp h2 {
+                font-size: 24px
+            }
+
+            .resultstamp .bigstar {
+                font-size: 36px;
+                letter-spacing: 4px
+            }
+
+            .bookentry p,
+            .credits {
+                font-size: 16px;
+                line-height: 1.6
+            }
+
+            .bookentry {
+                padding: 14px 0
+            }
+
+            .credits ol,
+            .credits ul {
+                padding-left: 23px
+            }
+
+            .credits li {
+                margin-bottom: 9px
+            }
+
+            #reset .actions {
+                flex-direction: column;
+                align-items: stretch
+            }
+
+            #reset .actions button {
+                min-height: 48px;
+                font-size: 16px
+            }
+        }
+
+        @media(max-height:500px) and (pointer:coarse) {
+            .dialoghead {
+                min-height: 48px;
+                padding-top: 6px;
+                padding-bottom: 6px
+            }
+
+            .missionaside {
+                display: none
+            }
+
+            .missiondock {
+                padding-top: 7px;
+                padding-bottom: max(7px, env(safe-area-inset-bottom))
+            }
+
+            .missiondock .endchoices {
+                grid-template-columns: 1fr 1fr
+            }
+        }
+
+        @media(max-width:360px) {
+            .menubar {
+                grid-template-columns: repeat(2, minmax(0, 1fr))
+            }
+
+            .gametitle {
+                font-size: 27px
+            }
+
+            .guidewindow {
+                grid-template-columns: 62px minmax(0, 1fr)
+            }
+
+            .mascotstage img {
+                width: 62px;
+                height: 86px
+            }
+
+            .maptoolbar {
+                grid-template-columns: minmax(0, 1fr)
+            }
+
+            .maptoolbar .winbtn {
+                max-width: none
+            }
+
+            .missionmeta {
+                align-items: start
+            }
+
+            .stepdots {
+                margin-left: 0
+            }
+
+            .sheet {
+                padding: 13px 10px
+            }
+        }
+
+        /* Tap-to-build title works with touch and keyboard, without drag-and-drop. */
+        .titlebuilder {
+            padding: 16px;
+            background: #e9eddd;
+            border: 2px inset #c6c8b8;
+            margin: 18px 0;
+            min-width: 0
+        }
+
+        .titlepreview {
+            background: #fffdf3;
+            border: 2px solid #75909a;
+            padding: 16px;
+            color: #173b87;
+            font-size: 20px;
+            line-height: 1.5;
+            overflow-wrap: anywhere;
+            min-height: 80px
+        }
+
+        .assemblymeta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            margin: 12px 0;
+            font-size: 14px
+        }
+
+        .chiprow {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 9px;
+            min-width: 0
+        }
+
+        .titlechip {
+            min-height: 46px;
+            max-width: 100%;
+            padding: 10px 13px;
+            text-align: left;
+            font: inherit;
+            font-size: 16px;
+            line-height: 1.4;
+            background: #fff9d9;
+            border: 2px solid #7e8060;
+            border-radius: 6px;
+            color: #324753;
+            cursor: pointer;
+            overflow-wrap: anywhere
+        }
+
+        .titlechip:disabled {
+            opacity: .55;
+            cursor: default
+        }
+
+        .titlechip:focus-visible,
+        .lessonnotes summary:focus-visible {
+            outline: 3px solid #234999;
+            outline-offset: 3px
+        }
+
+        .selectedchip {
+            background: #d6e7fb;
+            border-color: #52739a
+        }
+
+        .piecegroup {
+            border: 1px solid #aab699;
+            padding: 12px;
+            margin: 14px 0 0;
+            min-width: 0
+        }
+
+        .piecegroup legend {
+            padding: 0 7px;
+            font-size: 14px
+        }
+
+        .resultbody h4,
+        .reading-body h4 {
+            font-size: 18px;
+            margin: 24px 0 8px;
+            color: #334e69
+        }
+
+        .resultbody p {
+            line-height: 1.7;
+            margin-bottom: 16px
+        }
+
+        .lessonnotes {
+            border-top: 1px solid #b2bea1;
+            padding: 12px 0
+        }
+
+        .lessonnotes summary {
+            font-size: 17px;
+            min-height: 46px;
+            align-content: center;
+            cursor: pointer;
+            font-weight: 700
+        }
+
+        @media(max-width:790px), (max-width:1024px) and (pointer:coarse) {
+            .titlebuilder {
+                padding: 10px
+            }
+
+            .titlepreview {
+                font-size: 18px;
+                padding: 12px
+            }
+
+            .titlechip {
+                width: 100%;
+                min-height: 48px
+            }
+
+            .piecegroup {
+                padding: 10px
+            }
+
+            .resultbody h4 {
+                font-size: 18px
+            }
+        }
+
+        .maximus-grumble {
+            font-style: italic;
+            color: #514538;
+            margin: 0 0 10px;
+            line-height: 1.6
+        }
+
+        .hint-followup {
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 0;
+            color: #4c5b62
+        }
+
+        /* The map and reading mode are usable before scripts run, or if they cannot run. */
+        .launch-notice {
+            margin: 0 12px 12px;
+            padding: 14px 16px;
+            background: #fff6ce;
+            border: 2px solid #967642;
+            color: #39464e;
+            line-height: 1.5;
+            font-size: 15px
+        }
+
+        .launch-notice p {
+            margin: 6px 0 0
+        }
+
+        .game-ready .launch-notice,
+        .game-ready .reading-mission {
+            display: none !important
+        }
+
+        html:not(.game-ready) .menubar button,
+        html:not(.game-ready) #continuebtn,
+        html:not(.game-ready) #centerbtn,
+        html:not(.game-ready) .scorebox,
+        html:not(.game-ready) .notebook {
+            display: none
+        }
+
+        a.mapnode {
+            text-decoration: none
+        }
+
+        .preview-roads {
+            display: none;
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none
+        }
+
+        .reading-mission {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 100;
+            background: #fffdf0;
+            color: #30454e;
+            overflow-y: auto;
+            overscroll-behavior: contain;
+            -webkit-overflow-scrolling: touch;
+            padding-bottom: env(safe-area-inset-bottom)
+        }
+
+        .reading-mission:target {
+            display: block
+        }
+
+        .reading-mission .dialoghead {
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            padding-top: max(8px, env(safe-area-inset-top));
+            z-index: 2
+        }
+
+        .reading-mission a.winbtn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            min-height: 44px;
+            flex-shrink: 0;
+            color: #30454e;
+            font-size: 14px
+        }
+
+        .reading-body {
+            max-width: 850px;
+            margin: auto;
+            padding: 22px max(18px, env(safe-area-inset-right)) 30px max(18px, env(safe-area-inset-left));
+            font-size: 16px;
+            line-height: 1.6;
+            overflow-wrap: anywhere
+        }
+
+        .reading-body h2 {
+            font-size: 28px;
+            line-height: 1.3;
+            margin-bottom: 16px
+        }
+
+        .reading-body h3 {
+            font-size: 22px;
+            line-height: 1.4;
+            margin: 12px 0
+        }
+
+        .reading-step {
+            padding: 24px 0;
+            border-bottom: 2px dashed #b0ba91
+        }
+
+        .reading-body ol,
+        .reading-body ul {
+            padding-left: 26px
+        }
+
+        .reading-body li {
+            margin: 8px 0
+        }
+
+        .reading-body details {
+            margin: 14px 0;
+            padding: 12px;
+            background: #eef2d8;
+            border: 1px solid #9bab78
+        }
+
+        .reading-body summary {
+            min-height: 44px;
+            align-content: center;
+            cursor: pointer;
+            font-weight: 700;
+            line-height: 1.4
+        }
+
+        .reading-body details p {
+            margin: 12px 0 0
+        }
+
+        .reading-answer {
+            background: #e4efd7 !important
+        }
+
+        .reading-mission .brief pre {
+            white-space: pre-wrap
+        }
+
+        @media(max-width:790px), (max-width:1024px) and (pointer:coarse) {
+            .launch-notice {
+                margin: 0 6px 8px;
+                padding: 12px;
+                font-size: 14px
+            }
+
+            html:not(.game-ready) .world {
+                height: var(--reading-height, 135rem)
+            }
+
+            html:not(.game-ready) a.mapnode {
+                left: var(--mx);
+                top: var(--my)
+            }
+
+            html:not(.game-ready) .roads {
+                display: none
+            }
+
+            html:not(.game-ready) .preview-roads {
+                display: block
+            }
+
+            html:not(.game-ready) .region.classic,
+            html:not(.game-ready) .region.igaming {
+                top: var(--reading-heading, 98.75rem)
+            }
+
+            html:not(.game-ready) .maptoolbar {
+                grid-template-columns: minmax(0, 1fr)
+            }
+
+            .reading-body {
+                padding-top: 16px
+            }
+
+            .reading-body h2 {
+                font-size: 25px
+            }
+        }

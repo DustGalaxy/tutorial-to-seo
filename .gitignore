@@ -1,0 +1,26 @@
+# Python virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# Python cache & artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Node / dependencies (for future React/Vite builds)
+node_modules/
+dist/
+build/
+.next/
